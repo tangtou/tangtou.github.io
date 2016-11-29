@@ -123,9 +123,92 @@
 		
             
 		
+            
+		
+            
+		
+            
+		
         
         <!-- render other articles -->
         
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-11-29 </div>
+			<div class="article-title"><a href="/2016/11/29/php3/" >php3</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="php"><a href="#php" class="headerlink" title="php"></a>php</h1><h2 id="php文件操作-1-文件操作；2-目录操作"><a href="#php文件操作-1-文件操作；2-目录操作" class="headerlink" title="php文件操作(1.文件操作；2.目录操作)"></a>php文件操作(1.文件操作；2.目录操作)</h2><h3 id="文件的读取"><a href="#文件的读取" class="headerlink" title="文件的读取"></a>文件的读取</h3><ul>
+<li>###读取方式一：<br>1、<strong>打开文件获取资源</strong><h5 id="fopen-filename-mode-gt-filename文件路径，-mode读取方式"><a href="#fopen-filename-mode-gt-filename文件路径，-mode读取方式" class="headerlink" title="fopen($filename,$mode)=&gt;filename文件路径，$mode读取方式"></a>fopen($filename,$mode)=&gt;filename文件路径，$mode读取方式</h5><h5 id="例1-以只读方式打开一个位于本地服务器的文本文件"><a href="#例1-以只读方式打开一个位于本地服务器的文本文件" class="headerlink" title="例1:以只读方式打开一个位于本地服务器的文本文件"></a>例1:以只读方式打开一个位于本地服务器的文本文件</h5><h5 id="fh-fopen-“test-txt”-“r”"><a href="#fh-fopen-“test-txt”-“r”" class="headerlink" title="$fh = fopen(“test.txt”, “r”);"></a>$fh = fopen(“test.txt”, “r”);</h5><h5 id="例2-以只读方式打开一个远程文件"><a href="#例2-以只读方式打开一个远程文件" class="headerlink" title="例2:以只读方式打开一个远程文件"></a>例2:以只读方式打开一个远程文件</h5><h5 id="fh-fopen-“http-www-baidu-com“-“r”"><a href="#fh-fopen-“http-www-baidu-com“-“r”" class="headerlink" title="$fh = fopen(“http://www.baidu.com“, “r”);"></a>$fh = fopen(“<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>“, “r”);</h5>2、<strong>读取资源中的数据</strong><h5 id="fread-handle-lenght-gt-第一个参数要读取的资源，第二个参数读取的长度"><a href="#fread-handle-lenght-gt-第一个参数要读取的资源，第二个参数读取的长度" class="headerlink" title="fread($handle,$lenght)=&gt;第一个参数要读取的资源，第二个参数读取的长度"></a>fread($handle,$lenght)=&gt;第一个参数要读取的资源，第二个参数读取的长度</h5><h5 id="例1：-handle-fopen-“hh-txt”-”r”"><a href="#例1：-handle-fopen-“hh-txt”-”r”" class="headerlink" title="例1：$handle=fopen(“hh.txt”,”r”);"></a>例1：$handle=fopen(“hh.txt”,”r”);</h5>3.<strong>关闭文件</strong><h5 id="fclose-handle"><a href="#fclose-handle" class="headerlink" title="fclose($handle)"></a>fclose($handle)</h5><h5 id="虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。"><a href="#虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。" class="headerlink" title="虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。"></a>虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。</h5><h5 id="例1：-fh-fopen-“test-txt”-“r”"><a href="#例1：-fh-fopen-“test-txt”-“r”" class="headerlink" title="例1：$fh = fopen(“test.txt”, “r”);"></a>例1：$fh = fopen(“test.txt”, “r”);</h5><h5 id="fclose-fh"><a href="#fclose-fh" class="headerlink" title="fclose($fh)"></a>fclose($fh)</h5><h5 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h5><img src="../images/1.png" alt="1.png"></li>
+<li>###读取方式二：<h5 id="file-filename-gt-filename文件路径"><a href="#file-filename-gt-filename文件路径" class="headerlink" title="file($filename)=&gt;$filename文件路径"></a>file($filename)=&gt;$filename文件路径</h5><h5 id="demo-1"><a href="#demo-1" class="headerlink" title="demo"></a>demo</h5><img src="../images/2.png" alt="2.png"></li>
+<li>###读取方式三：<h5 id="file-get-contents-filename-gt-filename文件路径"><a href="#file-get-contents-filename-gt-filename文件路径" class="headerlink" title="file_get_contents($filename)=&gt;filename文件路径"></a>file_get_contents($filename)=&gt;filename文件路径</h5><h5 id="demo-2"><a href="#demo-2" class="headerlink" title="demo"></a>demo</h5><img src="../images/3.png" alt="3.png"><h5 id="file-get-contents-“https-www-baidu-com-quot-gt-扒别人网站代"><a href="#file-get-contents-“https-www-baidu-com-quot-gt-扒别人网站代" class="headerlink" title="file_get_contents(“https://www.baidu.com/&quot;)=&gt;扒别人网站代"></a>file_get_contents(“<a href="https://www.baidu.com/&quot;)=&gt;扒别人网站代" target="_blank" rel="external">https://www.baidu.com/&quot;)=&gt;扒别人网站代</a></h5><h5 id="demo-3"><a href="#demo-3" class="headerlink" title="demo"></a>demo</h5><img src="../images/4.png" alt="4.png"></li>
+<li>###读取方式四：<br><img src="../images/5.png" alt="5.png"></li>
+</ul>
+
+	
+	</div>
+</div>
+
+           
+		
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-11-29 </div>
+			<div class="article-title"><a href="/2016/11/29/php2/" >php2</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h4><pre><code>+　-　*　/　%　　//加 减 乘 除 取余
+</code></pre>
+		<!-- only display read_more button if there's more to display -->
+		<a type="button" href="/2016/11/29/php2/#more" class="btn btn-default more">阅读此文</a>
+	
+	</div>
+</div>
+
+           
+		
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-11-29 </div>
+			<div class="article-title"><a href="/2016/11/29/php1/" >php1</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="php"><a href="#php" class="headerlink" title="php"></a>php</h1><h2 id="php简单介绍"><a href="#php简单介绍" class="headerlink" title="php简单介绍"></a>php简单介绍</h2><p>php是一种后台编程语言，是目前比较主流的后台编程语言。全称是Hupertext Preprocessor,即超文本预处理器。博客系统的核心是由php完成的。facebook也在使用php开发后台。中小型公司也比较偏爱php做后台分开发。</p>
+		<!-- only display read_more button if there's more to display -->
+		<a type="button" href="/2016/11/29/php1/#more" class="btn btn-default more">阅读此文</a>
+	
+	</div>
+</div>
+
+           
+		
            
 			  
 	
@@ -359,40 +442,6 @@
 	<!-- display as entry -->	
 		<h3 class="title">
 			<div class="date"> 2016-06-28 </div>
-			<div class="article-title"><a href="/2016/06/28/css布局/" >css布局</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="css布局之垂直居中"><a href="#css布局之垂直居中" class="headerlink" title="css布局之垂直居中"></a>css布局之垂直居中</h2><h3 id="子元素于父元素垂直居中且其（子元素与父元素）宽度均可变"><a href="#子元素于父元素垂直居中且其（子元素与父元素）宽度均可变" class="headerlink" title="子元素于父元素垂直居中且其（子元素与父元素）宽度均可变"></a>子元素于父元素垂直居中且其（子元素与父元素）宽度均可变</h3><ul>
-<li><h3 id="table-cell-vertical-align"><a href="#table-cell-vertical-align" class="headerlink" title="table-cell + vertical-align"></a>table-cell + vertical-align</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> display: table-cell;</div><div class="line"> vertical-align: middle;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于兼容性好（支持-IE8，以下版本需要调整页面结构至-table）。"><a href="#此方法的好处在于兼容性好（支持-IE8，以下版本需要调整页面结构至-table）。" class="headerlink" title="此方法的好处在于兼容性好（支持 IE8，以下版本需要调整页面结构至 table）。"></a>此方法的好处在于兼容性好（支持 IE8，以下版本需要调整页面结构至 table）。</h4><ul>
-<li><h3 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line"> position: absolute;</div><div class="line"> top: 50%;</div><div class="line"> transform: translateY(-50%);</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。"><a href="#此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。" class="headerlink" title="此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。"></a>此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。</h4><ul>
-<li><h3 id="flex-align-items"><a href="#flex-align-items" class="headerlink" title="flex + align-items"></a>flex + align-items</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> display: flex;</div><div class="line"> align-items: center;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于只需设置父节点属性，无需设置子元素-但存在兼容性问题。"><a href="#此方法的好处在于只需设置父节点属性，无需设置子元素-但存在兼容性问题。" class="headerlink" title="此方法的好处在于只需设置父节点属性，无需设置子元素,但存在兼容性问题。"></a>此方法的好处在于只需设置父节点属性，无需设置子元素,但存在兼容性问题。</h4>
-	
-	</div>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-06-28 </div>
 			<div class="article-title"><a href="/2016/06/28/css布局之垂直居中/" >css布局</a></div>						
 		</h3>
 	
@@ -421,44 +470,6 @@
 
            
 		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-06-25 </div>
-			<div class="article-title"><a href="/2016/06/25/CSS布局之水平居中/" >begin</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="css布局之水平居中"><a href="#css布局之水平居中" class="headerlink" title="css布局之水平居中"></a>css布局之水平居中</h2><h3 id="子元素于父元素水平居中且其（子元素与父元素）宽度均可变"><a href="#子元素于父元素水平居中且其（子元素与父元素）宽度均可变" class="headerlink" title="子元素于父元素水平居中且其（子元素与父元素）宽度均可变"></a>子元素于父元素水平居中且其（子元素与父元素）宽度均可变</h3><ul>
-<li><h3 id="inline-block-text-align"><a href="#inline-block-text-align" class="headerlink" title="inline-block + text-align"></a>inline-block + text-align</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.child &#123;</div><div class="line"> display: inline-block;</div><div class="line">&#125;</div><div class="line">.parent &#123;</div><div class="line"> text-align: center;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于兼容性好（甚至可以兼容-IE-6-和-IE-7）。"><a href="#此方法的好处在于兼容性好（甚至可以兼容-IE-6-和-IE-7）。" class="headerlink" title="此方法的好处在于兼容性好（甚至可以兼容 IE 6 和 IE 7）。"></a>此方法的好处在于兼容性好（甚至可以兼容 IE 6 和 IE 7）。</h4><ul>
-<li><h3 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line"> position: absolute;</div><div class="line"> left: 50%;</div><div class="line"> transform: translateX(-50%);</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。"><a href="#此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。" class="headerlink" title="此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。"></a>此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。</h4><h4 id="但要注意的是transform-属于CSS3属性，存在兼容性问题"><a href="#但要注意的是transform-属于CSS3属性，存在兼容性问题" class="headerlink" title="但要注意的是transform 属于CSS3属性，存在兼容性问题."></a>但要注意的是transform 属于CSS3属性，存在兼容性问题.</h4><ul>
-<li><h3 id="table-margin"><a href="#table-margin" class="headerlink" title="table + margin"></a>table + margin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.child &#123;</div><div class="line"> display: table;</div><div class="line"> margin: 0 auto;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="display-table-在表现上类似-block-元素，但是宽度为内容宽-无需设置父元素样式-（支持-IE-8-及其以上版本）-兼容-IE-8-以下版本则需要调整table。"><a href="#display-table-在表现上类似-block-元素，但是宽度为内容宽-无需设置父元素样式-（支持-IE-8-及其以上版本）-兼容-IE-8-以下版本则需要调整table。" class="headerlink" title="display: table 在表现上类似 block 元素，但是宽度为内容宽,无需设置父元素样式 （支持 IE 8 及其以上版本）,兼容 IE 8 以下版本则需要调整table。"></a>display: table 在表现上类似 block 元素，但是宽度为内容宽,无需设置父元素样式 （支持 IE 8 及其以上版本）,兼容 IE 8 以下版本则需要调整table。</h4><ul>
-<li><h3 id="flex-justify-content"><a href="#flex-justify-content" class="headerlink" title="flex + justify-content"></a>flex + justify-content</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> display: flex;</div><div class="line"> justify-content: center;</div><div class="line">&#125;</div><div class="line">或者以下方法也可以</div><div class="line">.parent &#123;</div><div class="line"> display: flex;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line"> margin: 0 auto;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。"><a href="#这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。" class="headerlink" title="这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。"></a>这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。</h4>
-	
-	</div>
-</div>
-
-           
-		
 
 		</div>
 
@@ -468,6 +479,16 @@
 		<div class="pagination">
 <ul class="pagination">
 	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+
+		
+		   <li class="next"> <a href="/page/2/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a> </li>          
+        
+	
 </ul>
 </div>
 
@@ -503,23 +524,23 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2016/11/29/php3/" ><i class="fa fa-file-o"></i>php3</a>
+      </li>
+    
+      <li>
+        <a href="/2016/11/29/php2/" ><i class="fa fa-file-o"></i>php2</a>
+      </li>
+    
+      <li>
+        <a href="/2016/11/29/php1/" ><i class="fa fa-file-o"></i>php1</a>
+      </li>
+    
+      <li>
         <a href="/2016/11/24/css布局之全屏布局/" ><i class="fa fa-file-o"></i>css布局之全屏布局</a>
       </li>
     
       <li>
         <a href="/2016/11/24/css布局之多列等分布局/" ><i class="fa fa-file-o"></i>css布局之多列等分布局</a>
-      </li>
-    
-      <li>
-        <a href="/2016/11/12/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/17/js基础知识点2/" ><i class="fa fa-file-o"></i>js基础知识点2</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/13/js基础知识点1/" ><i class="fa fa-file-o"></i>js基础知识点1</a>
       </li>
     
   </ul>

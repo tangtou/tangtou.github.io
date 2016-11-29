@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>php3 | hello</title>
+  <meta name="author" content="xoappp">
+  
+  <meta name="description" content="phpphp文件操作(1.文件操作；2.目录操作)文件的读取
+###读取方式一：1、打开文件获取资源fopen($filename,$mode)=&amp;gt;filename文件路径，$mode读取方式例1:以只读方式打开一个位于本地服务器的文本文件$fh = fopen(“test.txt”, “r”">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="php3"/>
+  <meta property="og:site_name" content="hello"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">hello</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> php3</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="php"><a href="#php" class="headerlink" title="php"></a>php</h1><h2 id="php文件操作-1-文件操作；2-目录操作"><a href="#php文件操作-1-文件操作；2-目录操作" class="headerlink" title="php文件操作(1.文件操作；2.目录操作)"></a>php文件操作(1.文件操作；2.目录操作)</h2><h3 id="文件的读取"><a href="#文件的读取" class="headerlink" title="文件的读取"></a>文件的读取</h3><ul>
+<li>###读取方式一：<br>1、<strong>打开文件获取资源</strong><h5 id="fopen-filename-mode-gt-filename文件路径，-mode读取方式"><a href="#fopen-filename-mode-gt-filename文件路径，-mode读取方式" class="headerlink" title="fopen($filename,$mode)=&gt;filename文件路径，$mode读取方式"></a>fopen($filename,$mode)=&gt;filename文件路径，$mode读取方式</h5><h5 id="例1-以只读方式打开一个位于本地服务器的文本文件"><a href="#例1-以只读方式打开一个位于本地服务器的文本文件" class="headerlink" title="例1:以只读方式打开一个位于本地服务器的文本文件"></a>例1:以只读方式打开一个位于本地服务器的文本文件</h5><h5 id="fh-fopen-“test-txt”-“r”"><a href="#fh-fopen-“test-txt”-“r”" class="headerlink" title="$fh = fopen(“test.txt”, “r”);"></a>$fh = fopen(“test.txt”, “r”);</h5><h5 id="例2-以只读方式打开一个远程文件"><a href="#例2-以只读方式打开一个远程文件" class="headerlink" title="例2:以只读方式打开一个远程文件"></a>例2:以只读方式打开一个远程文件</h5><h5 id="fh-fopen-“http-www-baidu-com“-“r”"><a href="#fh-fopen-“http-www-baidu-com“-“r”" class="headerlink" title="$fh = fopen(“http://www.baidu.com“, “r”);"></a>$fh = fopen(“<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>“, “r”);</h5>2、<strong>读取资源中的数据</strong><h5 id="fread-handle-lenght-gt-第一个参数要读取的资源，第二个参数读取的长度"><a href="#fread-handle-lenght-gt-第一个参数要读取的资源，第二个参数读取的长度" class="headerlink" title="fread($handle,$lenght)=&gt;第一个参数要读取的资源，第二个参数读取的长度"></a>fread($handle,$lenght)=&gt;第一个参数要读取的资源，第二个参数读取的长度</h5><h5 id="例1：-handle-fopen-“hh-txt”-”r”"><a href="#例1：-handle-fopen-“hh-txt”-”r”" class="headerlink" title="例1：$handle=fopen(“hh.txt”,”r”);"></a>例1：$handle=fopen(“hh.txt”,”r”);</h5>3.<strong>关闭文件</strong><h5 id="fclose-handle"><a href="#fclose-handle" class="headerlink" title="fclose($handle)"></a>fclose($handle)</h5><h5 id="虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。"><a href="#虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。" class="headerlink" title="虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。"></a>虽然每个请求最后都会自动关闭文件，但明确关闭打开所有的文件是一个好的习惯。</h5><h5 id="例1：-fh-fopen-“test-txt”-“r”"><a href="#例1：-fh-fopen-“test-txt”-“r”" class="headerlink" title="例1：$fh = fopen(“test.txt”, “r”);"></a>例1：$fh = fopen(“test.txt”, “r”);</h5><h5 id="fclose-fh"><a href="#fclose-fh" class="headerlink" title="fclose($fh)"></a>fclose($fh)</h5><h5 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h5><img src="../images/1.png" alt="1.png"></li>
+<li>###读取方式二：<h5 id="file-filename-gt-filename文件路径"><a href="#file-filename-gt-filename文件路径" class="headerlink" title="file($filename)=&gt;$filename文件路径"></a>file($filename)=&gt;$filename文件路径</h5><h5 id="demo-1"><a href="#demo-1" class="headerlink" title="demo"></a>demo</h5><img src="../images/2.png" alt="2.png"></li>
+<li>###读取方式三：<h5 id="file-get-contents-filename-gt-filename文件路径"><a href="#file-get-contents-filename-gt-filename文件路径" class="headerlink" title="file_get_contents($filename)=&gt;filename文件路径"></a>file_get_contents($filename)=&gt;filename文件路径</h5><h5 id="demo-2"><a href="#demo-2" class="headerlink" title="demo"></a>demo</h5><img src="../images/3.png" alt="3.png"><h5 id="file-get-contents-“https-www-baidu-com-quot-gt-扒别人网站代"><a href="#file-get-contents-“https-www-baidu-com-quot-gt-扒别人网站代" class="headerlink" title="file_get_contents(“https://www.baidu.com/&quot;)=&gt;扒别人网站代"></a>file_get_contents(“<a href="https://www.baidu.com/&quot;)=&gt;扒别人网站代" target="_blank" rel="external">https://www.baidu.com/&quot;)=&gt;扒别人网站代</a></h5><h5 id="demo-3"><a href="#demo-3" class="headerlink" title="demo"></a>demo</h5><img src="../images/4.png" alt="4.png"></li>
+<li>###读取方式四：<br><img src="../images/5.png" alt="5.png"></li>
+</ul>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/11/29/php2/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-11-29 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 xoappp
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>
