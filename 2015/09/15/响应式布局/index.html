@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>响应式Web设计 | hello</title>
+  <meta name="author" content="xoappp">
+  
+  <meta name="description" content="响应式布局笔记参考自《响应式Web设计：HTML5和CSS3实践》，如下是全书的章的目录：
+第 1 章,HTML5、CSS3 及响应式设计入门
+第 2 章,媒体查询
+第 3 章,拥抱流式布局
+第 4 章,响应式设计中的 HTML5
+第 5 章,CSS3
+第 6 章,用 CSS3 创造令人惊艳的美
+第">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="响应式Web设计"/>
+  <meta property="og:site_name" content="hello"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">hello</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> 响应式Web设计</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h3 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h3><h4 id="笔记参考自《响应式Web设计：HTML5和CSS3实践》，如下是全书的章的目录："><a href="#笔记参考自《响应式Web设计：HTML5和CSS3实践》，如下是全书的章的目录：" class="headerlink" title="笔记参考自《响应式Web设计：HTML5和CSS3实践》，如下是全书的章的目录："></a>笔记参考自《响应式Web设计：HTML5和CSS3实践》，如下是全书的章的目录：</h4><ul>
+<li><h5 id="第-1-章-HTML5、CSS3-及响应式设计入门"><a href="#第-1-章-HTML5、CSS3-及响应式设计入门" class="headerlink" title="第 1 章,HTML5、CSS3 及响应式设计入门"></a>第 1 章,HTML5、CSS3 及响应式设计入门</h5></li>
+<li><h5 id="第-2-章-媒体查询"><a href="#第-2-章-媒体查询" class="headerlink" title="第 2 章,媒体查询"></a>第 2 章,媒体查询</h5></li>
+<li><h5 id="第-3-章-拥抱流式布局"><a href="#第-3-章-拥抱流式布局" class="headerlink" title="第 3 章,拥抱流式布局"></a>第 3 章,拥抱流式布局</h5></li>
+<li><h5 id="第-4-章-响应式设计中的-HTML5"><a href="#第-4-章-响应式设计中的-HTML5" class="headerlink" title="第 4 章,响应式设计中的 HTML5"></a>第 4 章,响应式设计中的 HTML5</h5></li>
+<li><h5 id="第-5-章-CSS3"><a href="#第-5-章-CSS3" class="headerlink" title="第 5 章,CSS3"></a>第 5 章,CSS3</h5></li>
+<li><h5 id="第-6-章-用-CSS3-创造令人惊艳的美"><a href="#第-6-章-用-CSS3-创造令人惊艳的美" class="headerlink" title="第 6 章,用 CSS3 创造令人惊艳的美"></a>第 6 章,用 CSS3 创造令人惊艳的美</h5></li>
+<li><h5 id="第-7-章-CSS3-的过渡、变形和动画"><a href="#第-7-章-CSS3-的过渡、变形和动画" class="headerlink" title="第 7 章,CSS3 的过渡、变形和动画"></a>第 7 章,CSS3 的过渡、变形和动画</h5></li>
+<li><h5 id="第-8-章-用-HTML5-和-CSS3-征服表单"><a href="#第-8-章-用-HTML5-和-CSS3-征服表单" class="headerlink" title="第 8 章,用 HTML5 和 CSS3 征服表单"></a>第 8 章,用 HTML5 和 CSS3 征服表单</h5></li>
+<li><h5 id="第-9-章-解决跨浏览器问题"><a href="#第-9-章-解决跨浏览器问题" class="headerlink" title="第 9 章,解决跨浏览器问题"></a>第 9 章,解决跨浏览器问题</h5><h3 id="第1章-HTML5、CSS3-及响应式设计入门"><a href="#第1章-HTML5、CSS3-及响应式设计入门" class="headerlink" title="第1章 HTML5、CSS3 及响应式设计入门"></a>第1章 HTML5、CSS3 及响应式设计入门</h3></li>
+<li><h5 id="人们通过手机浏览网页的比率在上升。手机浏览器浏览网页时，会让网页缩小至可视区域（“视口”），使用者可以对感兴趣的内容再单独放大。但是反复缩小、放大、点错位置终究不是友好的做法。"><a href="#人们通过手机浏览网页的比率在上升。手机浏览器浏览网页时，会让网页缩小至可视区域（“视口”），使用者可以对感兴趣的内容再单独放大。但是反复缩小、放大、点错位置终究不是友好的做法。" class="headerlink" title="人们通过手机浏览网页的比率在上升。手机浏览器浏览网页时，会让网页缩小至可视区域（“视口”），使用者可以对感兴趣的内容再单独放大。但是反复缩小、放大、点错位置终究不是友好的做法。"></a>人们通过手机浏览网页的比率在上升。手机浏览器浏览网页时，会让网页缩小至可视区域（“视口”），使用者可以对感兴趣的内容再单独放大。但是反复缩小、放大、点错位置终究不是友好的做法。</h5></li>
+<li><h5 id="预算充足的情况下，我们可以单独开发“手机版”网站，可以在其中增强一些功能，譬如根据当前GPS来挖掘出有价值数据。多数时候，根据视口大小来匹配不同的视觉效果还是优先选择。"><a href="#预算充足的情况下，我们可以单独开发“手机版”网站，可以在其中增强一些功能，譬如根据当前GPS来挖掘出有价值数据。多数时候，根据视口大小来匹配不同的视觉效果还是优先选择。" class="headerlink" title="预算充足的情况下，我们可以单独开发“手机版”网站，可以在其中增强一些功能，譬如根据当前GPS来挖掘出有价值数据。多数时候，根据视口大小来匹配不同的视觉效果还是优先选择。"></a>预算充足的情况下，我们可以单独开发“手机版”网站，可以在其中增强一些功能，譬如根据当前GPS来挖掘出有价值数据。多数时候，根据视口大小来匹配不同的视觉效果还是优先选择。</h5></li>
+<li><h5 id="响应式设计的概念最早提出是指将弹性网格布局、弹性图片、媒体和媒体查询结合起来的网页开发技巧的结合。和以往的做法不同，我们推荐首先对小屏幕进行设计，然后逐渐增强针对大屏幕的设计和内容。"><a href="#响应式设计的概念最早提出是指将弹性网格布局、弹性图片、媒体和媒体查询结合起来的网页开发技巧的结合。和以往的做法不同，我们推荐首先对小屏幕进行设计，然后逐渐增强针对大屏幕的设计和内容。" class="headerlink" title="响应式设计的概念最早提出是指将弹性网格布局、弹性图片、媒体和媒体查询结合起来的网页开发技巧的结合。和以往的做法不同，我们推荐首先对小屏幕进行设计，然后逐渐增强针对大屏幕的设计和内容。"></a>响应式设计的概念最早提出是指将弹性网格布局、弹性图片、媒体和媒体查询结合起来的网页开发技巧的结合。和以往的做法不同，我们推荐首先对小屏幕进行设计，然后逐渐增强针对大屏幕的设计和内容。</h5></li>
+<li><h5 id="全方位的测试响应式网站，只需要改变浏览器窗口大小就能完成大多数测试。当然你可以下载浏览器的插件来做到这些，比如Chrome上可以用WindowResizer插件。"><a href="#全方位的测试响应式网站，只需要改变浏览器窗口大小就能完成大多数测试。当然你可以下载浏览器的插件来做到这些，比如Chrome上可以用WindowResizer插件。" class="headerlink" title="全方位的测试响应式网站，只需要改变浏览器窗口大小就能完成大多数测试。当然你可以下载浏览器的插件来做到这些，比如Chrome上可以用WindowResizer插件。"></a>全方位的测试响应式网站，只需要改变浏览器窗口大小就能完成大多数测试。当然你可以下载浏览器的插件来做到这些，比如Chrome上可以用WindowResizer插件。</h5></li>
+<li><h5 id="一些响应式开发的站点"><a href="#一些响应式开发的站点" class="headerlink" title="一些响应式开发的站点"></a>一些响应式开发的站点</h5></li>
+<li><h6 id="http-blog-teamtreehouse-com"><a href="#http-blog-teamtreehouse-com" class="headerlink" title="http://blog.teamtreehouse.com/"></a><a href="http://blog.teamtreehouse.com/" target="_blank" rel="external">http://blog.teamtreehouse.com/</a></h6></li>
+<li><h6 id="http-2011-dconstruct-org"><a href="#http-2011-dconstruct-org" class="headerlink" title="http://2011.dconstruct.org/"></a><a href="http://2011.dconstruct.org/" target="_blank" rel="external">http://2011.dconstruct.org/</a></h6></li>
+<li><h5 id="使用HTML5和CSS3能使前端的效果实现变得简单很多，但是也面临着浏览器不支持的问题。我们可以用一些现代化的工具（库）来修补它们。"><a href="#使用HTML5和CSS3能使前端的效果实现变得简单很多，但是也面临着浏览器不支持的问题。我们可以用一些现代化的工具（库）来修补它们。" class="headerlink" title="使用HTML5和CSS3能使前端的效果实现变得简单很多，但是也面临着浏览器不支持的问题。我们可以用一些现代化的工具（库）来修补它们。"></a>使用HTML5和CSS3能使前端的效果实现变得简单很多，但是也面临着浏览器不支持的问题。我们可以用一些现代化的工具（库）来修补它们。</h5></li>
+<li><h5 id="重申一点，预算允许条件下完全定制的移动Web开发比响应式网站开发更合适，但预算有限的前提下响应式Web设计较之标准的固定宽度设计，总是能够提供更好的用户体验。"><a href="#重申一点，预算允许条件下完全定制的移动Web开发比响应式网站开发更合适，但预算有限的前提下响应式Web设计较之标准的固定宽度设计，总是能够提供更好的用户体验。" class="headerlink" title="重申一点，预算允许条件下完全定制的移动Web开发比响应式网站开发更合适，但预算有限的前提下响应式Web设计较之标准的固定宽度设计，总是能够提供更好的用户体验。"></a>重申一点，预算允许条件下完全定制的移动Web开发比响应式网站开发更合适，但预算有限的前提下响应式Web设计较之标准的固定宽度设计，总是能够提供更好的用户体验。</h5><h3 id="第2章-媒体查询：支持不同的视口"><a href="#第2章-媒体查询：支持不同的视口" class="headerlink" title="第2章 媒体查询：支持不同的视口"></a>第2章 媒体查询：支持不同的视口</h3><h4 id="关于媒体查询"><a href="#关于媒体查询" class="headerlink" title="关于媒体查询"></a>关于媒体查询</h4></li>
+<li>开始使用媒体查询吧，它已经被如此广泛地使用和被浏览器所支持。</li>
+<li>有了媒体查询，我们就能对设备特性（如视口宽度）设置特定的CSS样式。</li>
+<li><p>媒体查询的语法（可以拷贝如下代码到任意CSS的文件后面，然后预览相关网页的效果）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">        background-color: grey;</div><div class="line">    &#125;</div><div class="line">    @media screen and (max-width: 960px) &#123;</div><div class="line">        body &#123;</div><div class="line">            background-color: red;</div><div class="line">        &#125; </div><div class="line">    &#125;</div><div class="line">    @media screen and (max-width: 768px) &#123;</div><div class="line">        body &#123;</div><div class="line">            background-color: orange;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    @media screen and (max-width: 550px) &#123;</div><div class="line">        body &#123;</div><div class="line">            background-color: yellow;</div><div class="line">        &#125; </div><div class="line">    &#125;</div><div class="line">    @media screen and (max-width: 320px) &#123;</div><div class="line">        body &#123;</div><div class="line">            background-color: green;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>在CSS2中可以通过制定<link>标签的media属性来为样式表指定的设备类型（如显示屏或者打印机）。</p>
+</li>
+<li><p>媒体查询则不仅是针对设备类型，还能根据设备的特性来应用样式，如下例为检测一块纵向放置的显示屏。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (orientation: portrait)&quot; href=&quot;portrait- screen.css&quot; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>你甚至可以在检测中加上not来颠倒上例中的查询条件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;not screen and (orientation: portrait)&quot; href=&quot;portrait- screen.css&quot; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>你甚至可以在检测中加上not来颠倒上例中的查询条件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;not screen and (orientation: portrait)&quot; href=&quot;portrait- screen.css&quot; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>也可以将多个表达式组合在一起，如下为增加了视口宽度大于800的显示屏。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (orientation: portrait) and (min-width: 800px)&quot; href=&quot;800wide-portrait-screen.css&quot; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>更进一步还可以写一个媒体查询列表，相互之间用逗号隔开，任何一个条件满足就加载文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (orientation: portrait) and (min-width: 800px), projection&quot; href=&quot;800wide-portrait-screen.css&quot; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>除了在<head></head>中链接CSS文件时候使用媒体查询，我们也可以在CSS文件中使用媒体查询。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@media screen and (max-device-width: 400px) &#123;</div><div class="line">       h1 &#123; color: green &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>还可以在CSS中使用@import指令引入其他的样式表，谨慎使用这种方式，因为它会增加HTTP的请求从而导致网页加载速度变慢。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@import url(&quot;phone.css&quot;) screen and (max-width:360px);</div></pre></td></tr></table></figure>
+</li>
+<li><p>媒体查询能使用的特性: 媒体查询中最常用的两个特性是视口宽度width和屏幕宽度device-width，除此以外还有orientation、aspect-ratio等特性可以检测到。这些特性几乎都可以结合max和min结合来创建一个使用范围。如下phone.css只有在视口宽度在200到300之间才会被引入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@import url(&quot;phone.css&quot;) screen and (min-width:200px) and (max-width:360px);</div></pre></td></tr></table></figure>
+</li>
+<li><p>如何用媒体查询来改造我们的设计: CSS名为层叠样式表，意为后面的样式会覆盖前面的相同的样式，因此我们的做法是在前面设置通用的样式，然后用媒体查询来进一步重写相应部分。</p>
+</li>
+<li>加载媒体查询的最佳方法: 浏览器虽然能忽略与自身不匹配的样式文件，但却不一定不下载这些文件。因此，你将样式文件拆分到不用的样式文件没有太大好处（个人喜好或者方便代码组织的目的除外），这会增加页面请求HTTP的数量。因此建议用如下的方式在已有的样式表中追加媒体查询样式。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@media screen and (max-width: 768px) &#123;/*样式*/&#125;;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="CSS3过渡、变形和动画"><a href="#CSS3过渡、变形和动画" class="headerlink" title="CSS3过渡、变形和动画"></a>CSS3过渡、变形和动画</h3><h4 id="什么是CSS3过渡以及如何使用它"><a href="#什么是CSS3过渡以及如何使用它" class="headerlink" title="什么是CSS3过渡以及如何使用它"></a>什么是CSS3过渡以及如何使用它</h4><ul>
+<li>一个超链接默认设置了一个样式，当鼠标hover上去的时候可能会应用到另外一个样式，这就是一个过渡。过渡可以针对属性来过渡，比如当hover发生时候过渡。</li>
+<li>过渡涉及四个属性：</li>
+</ul>
+<ol>
+<li>transition-property 要过渡的属性名称，比如background-color或all</li>
+<li>transition-duration 定义过渡效果持续的时间</li>
+<li>transition-timing-function 定义过渡期间速度如何变化</li>
+<li>transition-timing-function 定义过渡期间速度如何变化</li>
+</ol>
+<ul>
+<li><p>单独使用各种过渡属性创建效果的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">content a &#123;</div><div class="line">      transition-property: all;</div><div class="line">      transition-duration: 1s;</div><div class="line">      transition-timing-function: ease;</div><div class="line">      transition-delay: 0s;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>简写语法如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">transition: all 1s ease 0s;</div></pre></td></tr></table></figure>
+</li>
+<li><p>也可以在不同的时间段内过渡不同的属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">content a &#123;</div><div class="line">      /* other setting */</div><div class="line">      transition-property: border, color, text-shadow; </div><div class="line">      transition-duration: 2s, 3s, 8s;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>过渡调速函数，不太理解可以参考这里 <a href="http://cubic-bezier.com/#.17,.67,.83,.67" target="_blank" rel="external">http://cubic-bezier.com/#.17,.67,.83,.67</a></p>
+</li>
+</ul>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2015/11/03/PHP学习/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+          <li class="next disabled"><a>下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2015-09-15 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 xoappp
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>
