@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>浏览器兼容问题 | hello</title>
+  <meta name="author" content="xoappp">
+  
+  <meta name="description" content="常见浏览器兼容性问题与解决方案1、不同浏览器的标签默认的外补丁和内补丁不同，随便写几个标签，不加样式控制的情况下，各自的margin 和padding差异较大。
+解决方案：CSS里    *{margin:0;padding:0;}
+2、块属性标签float后，又有横行的margin情况下，在IE6">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="浏览器兼容问题"/>
+  <meta property="og:site_name" content="hello"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">hello</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> 浏览器兼容问题</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="常见浏览器兼容性问题与解决方案"><a href="#常见浏览器兼容性问题与解决方案" class="headerlink" title="常见浏览器兼容性问题与解决方案"></a>常见浏览器兼容性问题与解决方案</h1><p>1、不同浏览器的标签默认的外补丁和内补丁不同，随便写几个标签，不加样式控制的情况下，各自的margin 和padding差异较大。</p>
+<p>解决方案：CSS里    *{margin:0;padding:0;}</p>
+<p>2、块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大，IE6中后面的一块被顶到下一行</p>
+<p>解决方案：在float的标签样式控制中加入 display:inline;将其转化为行内属性</p>
+<p>3、设置较小高度标签（一般小于10px），在IE6，IE7，遨游中高度超出自己设置高度，IE6、7和遨游里这个标签的高度不受控制，超出自己设置的高度。</p>
+<p>结局方案：给超出高度的标签设置overflow:hidden;或者设置行高line-height 小于你设置的高度。</p>
+<p>这种情况一般出现在我们设置小圆角背景的标签里。出现这个问题的原因是IE8之前的浏览器都会给标签一个最小默认的行高的高度。即使你的标签是空的，这个标签的高度还是会达到默认的行高。</p>
+<p>4、行内属性标签，设置display:block后采用float布局，又有横行的margin的情况，IE6间距bug，IE6里的间距比超过设置的间距</p>
+<p>解决方案：在display:block;后面加入display:inline;display:table;</p>
+<p>5、图片默认有间距，几个img标签放在一起的时候，有些浏览器会有默认的间距，加了问题一中提到的通配符也不起作用。</p>
+<p>解决方案：使用float属性为img布局</p>
+<p>6、标签最低高度设置min-height不兼容</p>
+<p>解决方案：如果我们要设置一个标签的最小高度200px，需要进行的设置为：{min-height:200px; height:auto !important; height:200px; overflow:visible;}</p>
+<p>7、 ie6.0横向margin加倍</p>
+<p>解决方法：display：inline；</p>
+<p>8、ie6.0下默认有行高</p>
+<p>解决方法：overflow:hidden;或font-size:0;或line-height：xx px；</p>
+<p>9、Ie6下，不识别最大宽、高度和最小宽高度，意即min-width/height和 Max-width/height在ie6中没效果，</p>
+<p>解决方法：(1)：.abc{border:1px blue solid;width:200px;height:200px;}<br>                          html&gt;body .abc{width:auto;height:auto;min-width:200px;min-height:200px;}<br>        (2)：.abc{width:200px;height:200px;_width:200px;_height:200px;}（因为ie6有一个特征，当定义一个高度时，如果内容超过高度，元素会自动调整高度。）</p>
+<p>10、Ie6里面：如li设宽、高，并且li里面的标签浮动，那么li之间会有间距</p>
+<p>解决方法：li不设宽、高或者li内的标签不浮动</p>
+<p>11、 li之间有间距</p>
+<p>解决方法：li 设置vertical-align:middle;</p>
+<p>12、当多个浮动元素中间夹杂着HTML注释语句时，如果浮动元素宽度为100%，则在下一行多显示一个上一行最后一个字符。</p>
+<p> 解决办法：给浮动元素添加display:inline;。</p>
+<p>13、opacity 定义元素的不透明度</p>
+<pre><code>filter：alpha（opacity=80）；/*ie支持该属性*/
+opacity：0.8；/*支持css3的浏览器*/
+</code></pre><p>14、两个块元素，竖向的margin值不增加，会重叠，其间距为最大margin值。</p>
+<p>15、ie6 不支持 fixed </p>
+<p>16、优先级：被!important 注明的css属性具有最高优先级(.abc{color:red !important;})。但在ie6中!important具有一个bug:在同一组css属性中，!important不起作用。</p>
+<pre><code>/*对于非IE6可以这样写*/
+#top{  
+position:fixed;  
+bottom:0;  
+right:20px;  
+}  
+
+/*但是IE6是不支持fixed定位的，需要另外重写*/
+#top{  
+position:fixed;  
+_position:absolute;  
+top:0;  
+right:20px;  
+_bottom:auto;  
+_top:expression(eval(document.documentElement.scrollTop));
+}  
+
+/*使用hack使IE6实现该效果，但这个东东会闪烁，需要以下代码*/
+*html{  
+       background-image:url(about:blank);  
+    background-attachment:fixed;  
+}  
+
+/*使固定在顶部*/
+#top{  
+    _position:absolute;  
+    _bottom:auto;  
+        _top:expression(eval(document.documentElement.scrollTop));  
+}  
+
+/*固定在底部*/
+#top{  
+    _position:absolute;  
+    _bottom:auto;  
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop)||0)-(parseInt(this.currentStyle.marginBottom)||0)));  
+}  
+/*垂直居中*/
+#top{
+position:fixed;
+top:50%;
+margin-top:-50px;
+_position:absolute;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight/2)); 
+}
+</code></pre><p>17、z-index不起作用的 bug</p>
+<p>1）ie6下 首先讲讲第一种z-index无论设置多高都不起作用情况。这种情况发生的条件有三个：1、父标签position属性为relative；2、问题标签含有浮动(float)属性。<br>2）所有浏览器：它只认第一个爸爸<br>层级的高低不仅要看自己，还要看自己的老爸这个后台是否够硬。用术语具体描述为：<br>父标签position属性为relative或absolute时，子标签的absolute属性是相对于父标签而言的。而在IE6下，层级的表现有时候不是看子标签的z-index多高，而要看它们的父标签的z-index谁高谁低。</p>
+<p>总结：做兼容页面的方法是：每写一小段代码（布局中的一行或者一块）我们都要在不同的浏览器中看是否兼容，当然熟练到一定的程度就没这么麻烦了。建议经常会碰到兼容性问题的新手使用。很多兼容性问题都是因为浏览器对标签的默认属性解析不同造成的，只要我们稍加设置都能轻松地解决这些兼容问题。如果我们熟悉标签的默认属性的话，就能很好的理解为什么会出现兼容问题以及怎么去解决这些兼容问题。</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/11/20/php2/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/11/14/mongodb/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-11-17 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 xoappp
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>

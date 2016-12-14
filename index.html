@@ -135,6 +135,18 @@
 		
             
 		
+            
+		
+            
+		
+            
+		
+            
+		
+            
+		
+            
+		
         
         <!-- render other articles -->
         
@@ -155,6 +167,91 @@
 	
 		<h3 id="ios项目打包"><a href="#ios项目打包" class="headerlink" title="ios项目打包"></a>ios项目打包</h3><p><strong>react-native 发布流程:</strong><br><strong>准备工作:</strong><br>1、苹果开发者帐号一枚<br><a href="https://developer.apple.com/" target="_blank" rel="external">https://developer.apple.com/</a><br>2、蒲公英应用测试号一枚<br><a href="https://www.pgyer.com/" target="_blank" rel="external">https://www.pgyer.com/</a></p>
 <p><strong>开发者中心</strong><br>1、打开网址，点击右上方的Account进行登陆<br>2、点击 Certificates,IDs &amp; Profiles<br>3、找到Devices 点击选项ALL点击右上角+号进行添加设备UDID 之后点击Continue和Register如下图：<br><img src="../img/ios1.png" alt="ios1.png"><br><img src="../img/ios2.png" alt="ios2.png"><br>        添加UDID<br>4、Identifiers -&gt; App IDs -&gt; 添加APP ID也就是bounld ID<br>点击Continue和Register如下图：<br><img src="../img/ios3.png" alt="ios3.png"><br>Bundle Id 就是此项里面的内容<br><img src="../img/ios4.png" alt="ios4.png"><br>5、最下面 Provisioning Profiles -&gt; Distribution-&gt;添加描述文件－&gt;点击添加-&gt;Ad Hoc-&gt;继续-&gt;选中之前添加的App ID-&gt;继续－&gt;选中证书-&gt;继续－&gt;选择设备-&gt;继续-&gt;添加描述文件名称－进入到下载描述文件页，点击下载<br><img src="../img/ios5.png" alt="ios5.png"><br><img src="../img/ios6.png" alt="ios6.png"><br><img src="../img/ios7.png" alt="ios7.png"><br><strong>下载权限可以全选，也可以只选择部分人员。</strong><br><img src="../img/ios9.png" alt="ios9.png"><br><img src="../img/ios10.png" alt="ios10.png"><br>6、找到你下载好的有效证书和下载好的描述文件双击打开<br><img src="../img/ios11.png" alt="ios11.png"><br>7、找到要打包的文件夹，文件用Xcode打开，点击Build Settings –&gt;All和Combined –&gt;Code Signing –&gt; Code Signing Identity和Provisioning Profile 选择正确的证书和描述文件<br><img src="../img/ios12.png" alt="ios12.png"><br><img src="../img/ios13.png" alt="ios13.png"><br>8、然后将Xcode左上方的模拟机选成默认的<br><img src="../img/ios14.png" alt="ios14.png"><br><img src="../img/ios15.png" alt="ios15.png"><br>9、选择Product–&gt;Archive<br><img src="../img/ios16.png" alt="ios16.png"><br>10、打包成功 点击Export–&gt;Save for Ad Hoc Deployment<br><img src="../img/ios17.png" alt="ios17.png"><br><img src="../img/ios18.png" alt="ios18.png"><br><img src="../img/ios19.png" alt="ios19.png"><br><img src="../img/ios20.png" alt="ios20.png"><br><img src="../img/ios21.png" alt="ios21.png"><br><img src="../img/ios22.png" alt="ios22.png"><br>11、文件夹里会出现后缀为.Ipa的文件证明打包完成<br><img src="../img/ios23.png" alt="ios23.png"><br>12、点击此网站<a href="https://www.pgyer.com/上传即可" target="_blank" rel="external">https://www.pgyer.com/上传即可</a><br><img src="../img/ios24.png" alt="ios24.png"><br>13、扫描二维码获取UDID<br><img src="../img/ios25.png" alt="ios25.png"></p>
+
+	
+	</div>
+</div>
+
+           
+		
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-11-28 </div>
+			<div class="article-title"><a href="/2016/11/28/markdown语法总结/" >markdown语法总结</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<p>搭建好博客后需要在终端里进入博客文件，然后 hexo new example 出一个文件来才能发到博客上，格式是.md，在Mac下需要通过Mou打开，然后编写。此文总结markdown的语法。</p>
+<h3 id="1-标题设置"><a href="#1-标题设置" class="headerlink" title="1.标题设置"></a>1.标题设置</h3><p>有两种方式</p>
+<p>一、通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。</p>
+<p>二、在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
+<p>例如：</p>
+<p><img src="http://d.hiphotos.baidu.com/image/pic/item/d1a20cf431adcbeffd1e9427a5af2edda3cc9fed.jpg" alt=""></p>
+<h3 id="2-块注释"><a href="#2-块注释" class="headerlink" title="2.块注释"></a>2.块注释</h3><p>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）</p>
+<p>例如：</p>
+<p><img src="http://f.hiphotos.baidu.com/image/pic/item/eaf81a4c510fd9f9b2e780482c2dd42a2834a41b.jpg" alt=""></p>
+<p>效果如下：</p>
+<p><img src="http://c.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c6053d2e0a9416fdfaaf516720.jpg" alt=""></p>
+<h3 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3.斜体"></a>3.斜体</h3><p>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来</p>
+<p><strong>_在英文输入法下才能打出来的</strong></p>
+<p>例如：</p>
+<p><img src="http://g.hiphotos.baidu.com/image/pic/item/ac6eddc451da81cbd7e354ec5b66d0160924318e.jpg" alt=""></p>
+<p>效果如下：</p>
+<p><img src="http://e.hiphotos.baidu.com/image/pic/item/1b4c510fd9f9d72a0408c73cdd2a2834349bbba7.jpg" alt=""></p>
+<h3 id="4-粗体"><a href="#4-粗体" class="headerlink" title="4.粗体"></a>4.粗体</h3><p>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来</p>
+<p>设置与3相同，不在举例；</p>
+<h3 id="5-无序列表-ul"><a href="#5-无序列表-ul" class="headerlink" title="5.无序列表(ul)"></a>5.无序列表(ul)</h3><p>在文字开头添加(<em> , +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</p>
+<p>例如：</p>
+<p><img src="http://g.hiphotos.baidu.com/image/pic/item/9825bc315c6034a8f03168a0c2134954082376c4.jpg" alt=""></p>
+<p>效果如下：</p>
+<p><img src="http://f.hiphotos.baidu.com/image/pic/item/a9d3fd1f4134970af56bc20e9ccad1c8a7865df3.jpg" alt=""></p>
+<p><strong>正常情况下，有序列表和无序列表需要分开，这里没分开，所以有序列表没有显示出正常的情况。</strong></p>
+<h3 id="6-有序列表"><a href="#6-有序列表" class="headerlink" title="6.有序列表"></a>6.有序列表</h3><p>使用数字后面跟上点。（还要有空格）</p>
+<h3 id="7-链接"><a href="#7-链接" class="headerlink" title="7.链接"></a>7.链接</h3><p><img src="http://f.hiphotos.baidu.com/image/pic/item/f9198618367adab45728c66282d4b31c8701e413.jpg" alt=""></p>
+<p><strong>图片只支持网上的图片，需要把自己的图片放到网上，操作如下</strong></p>
+<p>百度搜索  百度图片 右上角找到我的图片,然后进入就可以上传图片到网上了</p>
+<p><img src="http://b.hiphotos.baidu.com/image/pic/item/9e3df8dcd100baa11cda989a4e10b912c8fc2e19.jpg" alt=""></p>
+<h3 id="8-代码"><a href="#8-代码" class="headerlink" title="8.代码"></a>8.代码</h3><p>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用 <strong>`</strong> 包裹着代码。</p>
+<p>（`不是单引号而是左上角的ESC下面~中的）<br>(英文输入法下输入)</p>
+<p>第二种：大片文字需要实现代码框。使用Tab或者四个空格。</p>
+<p>例如：</p>
+<p><img src="http://h.hiphotos.baidu.com/image/pic/item/eac4b74543a98226c8b7f1068382b9014a90eb99.jpg" alt=""></p>
+<p>效果如下</p>
+<p><img src="http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa695ec98650ee3d6d55fbdab1.jpg" alt=""></p>
+<h3 id="9-脚注"><a href="#9-脚注" class="headerlink" title="9.脚注"></a>9.脚注</h3><p><img src="http://g.hiphotos.baidu.com/image/pic/item/4a36acaf2edda3cc02cc7c0108e93901213f92e3.jpg" alt=""></p>
+<p>效果如下</p>
+<p><img src="http://h.hiphotos.baidu.com/image/pic/item/8cb1cb13495409237a4ca75f9b58d109b3de49ee.jpg" alt=""></p>
+<h3 id="10-分割线-hr效果"><a href="#10-分割线-hr效果" class="headerlink" title="10.分割线(hr效果)"></a>10.分割线(hr效果)</h3><p>在空白行下方添加三条“-”或者“*”横线。（前面讲过在文字下方添加“-”，实现的2级标题）(英文输入法下输入)</p>
+<p>例如：</p>
+<p><img src="http://g.hiphotos.baidu.com/image/pic/item/71cf3bc79f3df8dc17db49b0c411728b47102829.jpg" alt=""></p>
+<p>下面有分割线</p>
+<hr>
+<hr>
+<h3 id="11-首行缩进"><a href="#11-首行缩进" class="headerlink" title="11.首行缩进"></a>11.首行缩进</h3><p>在开头的时候，先输入这个，然后紧跟着输入文本即可。分号也不要掉。</p>
+<p><code>&amp;#160; &amp;#160; &amp;#160; &amp;#160;</code></p>
+<h3 id="12-字体颜色"><a href="#12-字体颜色" class="headerlink" title="12.字体颜色"></a>12.字体颜色</h3><p><code>&lt;font color=&quot;red&quot;&gt;文字&lt;/font&gt;</code></p>
+<font color="red">文字</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 	</div>
@@ -220,6 +317,444 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2016-11-17 </div>
+			<div class="article-title"><a href="/2016/11/17/浏览器兼容问题/" >浏览器兼容问题</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="常见浏览器兼容性问题与解决方案"><a href="#常见浏览器兼容性问题与解决方案" class="headerlink" title="常见浏览器兼容性问题与解决方案"></a>常见浏览器兼容性问题与解决方案</h1><p>1、不同浏览器的标签默认的外补丁和内补丁不同，随便写几个标签，不加样式控制的情况下，各自的margin 和padding差异较大。</p>
+<p>解决方案：CSS里    *{margin:0;padding:0;}</p>
+<p>2、块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大，IE6中后面的一块被顶到下一行</p>
+<p>解决方案：在float的标签样式控制中加入 display:inline;将其转化为行内属性</p>
+<p>3、设置较小高度标签（一般小于10px），在IE6，IE7，遨游中高度超出自己设置高度，IE6、7和遨游里这个标签的高度不受控制，超出自己设置的高度。</p>
+<p>结局方案：给超出高度的标签设置overflow:hidden;或者设置行高line-height 小于你设置的高度。</p>
+<p>这种情况一般出现在我们设置小圆角背景的标签里。出现这个问题的原因是IE8之前的浏览器都会给标签一个最小默认的行高的高度。即使你的标签是空的，这个标签的高度还是会达到默认的行高。</p>
+<p>4、行内属性标签，设置display:block后采用float布局，又有横行的margin的情况，IE6间距bug，IE6里的间距比超过设置的间距</p>
+<p>解决方案：在display:block;后面加入display:inline;display:table;</p>
+<p>5、图片默认有间距，几个img标签放在一起的时候，有些浏览器会有默认的间距，加了问题一中提到的通配符也不起作用。</p>
+<p>解决方案：使用float属性为img布局</p>
+<p>6、标签最低高度设置min-height不兼容</p>
+<p>解决方案：如果我们要设置一个标签的最小高度200px，需要进行的设置为：{min-height:200px; height:auto !important; height:200px; overflow:visible;}</p>
+<p>7、 ie6.0横向margin加倍</p>
+<p>解决方法：display：inline；</p>
+<p>8、ie6.0下默认有行高</p>
+<p>解决方法：overflow:hidden;或font-size:0;或line-height：xx px；</p>
+<p>9、Ie6下，不识别最大宽、高度和最小宽高度，意即min-width/height和 Max-width/height在ie6中没效果，</p>
+<p>解决方法：(1)：.abc{border:1px blue solid;width:200px;height:200px;}<br>                          html&gt;body .abc{width:auto;height:auto;min-width:200px;min-height:200px;}<br>        (2)：.abc{width:200px;height:200px;_width:200px;_height:200px;}（因为ie6有一个特征，当定义一个高度时，如果内容超过高度，元素会自动调整高度。）</p>
+<p>10、Ie6里面：如li设宽、高，并且li里面的标签浮动，那么li之间会有间距</p>
+<p>解决方法：li不设宽、高或者li内的标签不浮动</p>
+<p>11、 li之间有间距</p>
+<p>解决方法：li 设置vertical-align:middle;</p>
+<p>12、当多个浮动元素中间夹杂着HTML注释语句时，如果浮动元素宽度为100%，则在下一行多显示一个上一行最后一个字符。</p>
+<p> 解决办法：给浮动元素添加display:inline;。</p>
+<p>13、opacity 定义元素的不透明度</p>
+<pre><code>filter：alpha（opacity=80）；/*ie支持该属性*/
+opacity：0.8；/*支持css3的浏览器*/
+</code></pre><p>14、两个块元素，竖向的margin值不增加，会重叠，其间距为最大margin值。</p>
+<p>15、ie6 不支持 fixed </p>
+<p>16、优先级：被!important 注明的css属性具有最高优先级(.abc{color:red !important;})。但在ie6中!important具有一个bug:在同一组css属性中，!important不起作用。</p>
+<pre><code>/*对于非IE6可以这样写*/
+#top{  
+position:fixed;  
+bottom:0;  
+right:20px;  
+}  
+
+/*但是IE6是不支持fixed定位的，需要另外重写*/
+#top{  
+position:fixed;  
+_position:absolute;  
+top:0;  
+right:20px;  
+_bottom:auto;  
+_top:expression(eval(document.documentElement.scrollTop));
+}  
+
+/*使用hack使IE6实现该效果，但这个东东会闪烁，需要以下代码*/
+*html{  
+       background-image:url(about:blank);  
+    background-attachment:fixed;  
+}  
+
+/*使固定在顶部*/
+#top{  
+    _position:absolute;  
+    _bottom:auto;  
+        _top:expression(eval(document.documentElement.scrollTop));  
+}  
+
+/*固定在底部*/
+#top{  
+    _position:absolute;  
+    _bottom:auto;  
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop)||0)-(parseInt(this.currentStyle.marginBottom)||0)));  
+}  
+/*垂直居中*/
+#top{
+position:fixed;
+top:50%;
+margin-top:-50px;
+_position:absolute;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight/2)); 
+}
+</code></pre><p>17、z-index不起作用的 bug</p>
+<p>1）ie6下 首先讲讲第一种z-index无论设置多高都不起作用情况。这种情况发生的条件有三个：1、父标签position属性为relative；2、问题标签含有浮动(float)属性。<br>2）所有浏览器：它只认第一个爸爸<br>层级的高低不仅要看自己，还要看自己的老爸这个后台是否够硬。用术语具体描述为：<br>父标签position属性为relative或absolute时，子标签的absolute属性是相对于父标签而言的。而在IE6下，层级的表现有时候不是看子标签的z-index多高，而要看它们的父标签的z-index谁高谁低。</p>
+<p>总结：做兼容页面的方法是：每写一小段代码（布局中的一行或者一块）我们都要在不同的浏览器中看是否兼容，当然熟练到一定的程度就没这么麻烦了。建议经常会碰到兼容性问题的新手使用。很多兼容性问题都是因为浏览器对标签的默认属性解析不同造成的，只要我们稍加设置都能轻松地解决这些兼容问题。如果我们熟悉标签的默认属性的话，就能很好的理解为什么会出现兼容问题以及怎么去解决这些兼容问题。</p>
+
+	
+	</div>
+</div>
+
+           
+		
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-11-14 </div>
+			<div class="article-title"><a href="/2016/11/14/mongodb/" >mongodb</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<h3 id="mongodb的学习简介"><a href="#mongodb的学习简介" class="headerlink" title="mongodb的学习简介"></a>mongodb的学习简介</h3><p>在介绍<a href="http://lib.csdn.net/base/mongodb" target="_blank" rel="external">mongoDB</a>之前，我们先来简单了解下它的数据逻辑结构。</p>
+<p>MongoDB的逻辑结构是一种层次结构，主要由：<strong>文档(document)、集合(collection)、数据库(database)</strong> 这三部分组成的。 </p>
+<pre><code>文档(document)：由键/值对构成，像{a:1}；{s:”abc”}等，它是MongoDB核心单元，MongoDB的文档（document），相当于关系数据库中的一行记录
+
+集合（Collection）：多个文档组成一个集合（collection），相当于关系数据库的表。 
+
+数据库（database）：多个集合（collection），逻辑上组织在一起，就是数据库（database）。
+</code></pre><p>一个MongoDB实例支持多个数据库（database）。</p>
+<h3 id="安装以及引用"><a href="#安装以及引用" class="headerlink" title="安装以及引用"></a>安装以及引用</h3><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p><strong>npm install mongoose</strong></p>
+<h5 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h5><p><strong>var mongoose = require(‘mongoose’);</strong></p>
+<h5 id="链接数据库"><a href="#链接数据库" class="headerlink" title="链接数据库"></a>链接数据库</h5><p><strong>var db = mongoose(‘mongodb://user:pass@localhost:port/database’);</strong></p>
+<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><p>var mongoose = require(“mongoose”); </p>
+<p>var db = mongoose.connect(“mongodb://127.0.0.1:27017/test”); </p>
+<p>db.connection.on(“error”, function (error) { </p>
+<p>&#160; &#160; &#160; &#160;console.log(“数据库连接失败：” + error); </p>
+<p>}); </p>
+<p>db.connection.on(“open”, function () {</p>
+<p>&#160; &#160; &#160; &#160;console.log(“——数据库连接成功！——”); </p>
+<p>});</p>
+<h3 id="MongoDB基础"><a href="#MongoDB基础" class="headerlink" title="MongoDB基础"></a>MongoDB基础</h3><pre><code>Schema ： 一种以文件形式存储的数据库模型骨架，不具备数据库的操作能力
+
+Model ： 由Schema发布生成的模型，具有抽象属性和行为的数据库操作对
+
+Entity ： 由Model创建的实体，他的操作也会影响数据库
+</code></pre><p>Schema —— 一种以文件形式存储的数据库模型骨架，无法直接通往数据库端，也就是说它不具备对数据库的操作能力，仅仅只是数据库模型在程序片段中的一种表现，可以说是数据属性模型(传统意义的表结构)，又或着是“集合”的模型骨架。 </p>
+<pre><code>var mongoose = require(&quot;mongoose&quot;)
+var TestSchema = new mongoose.Schema({
+    name : {type:String},
+    age : {type:Number,default:0},
+    time : {type:Date,default:Date.now},
+    emial : {type:String,default:&apos;&apos;}
+});
+</code></pre><p>Model —— 由Schema构造生成的模型，除了Schema定义的数据库骨架以外，还具有数据库操作的行为，类似于管理数据库属性、行为的类。</p>
+<pre><code>var db = mongoose.connect(&quot;mongodb://127.0.0.1:27017/test&quot;);
+// 通过Schema创建Model
+var TestModel = db.model(&quot;test1&quot;, TestSchema);
+</code></pre><p>数据库中的集合名称,当我们对其添加数据时如果test1已经存在，则会保存到其目录下，如果未存在，则会创建test1集合，然后在保存数据。</p>
+<p>Entity —— 由Model创建的实体，使用save方法保存数据，Model和Entity都有能影响数据库的操作，但Model比Entity更具操作性。</p>
+<pre><code>var TestEntity = new TestModel({
+    name : &quot;Lenka&quot;,
+    age : 36,
+    email : &quot;lenka@qq.com&quot;
+});
+console.log(TestEntity.name); // Lenka
+console.log(TestEntity.age); // 36
+</code></pre><h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><p>数据库的连接，Schemal的创建，模型的创建，实体的创建，通过实体保存数据库信息。</p>
+<pre><code>var mongoose = require(&quot;mongoose&quot;);
+var db = mongoose.connect(&quot;mongodb://127.0.0.1:27017/test&quot;);
+var TestSchema = new mongoose.Schema({
+        name : {type:String},
+    age : {type:Number,default:0},
+    email : {type:String},
+    time : {type:Date,default:Date.now}
+});
+var TestModel =     db.model(&quot;test1&quot;,TestSchema); //&apos;test&apos;相当于collection
+var TestEntity = new TestModel({
+    name:&apos;helloworld&apos;,
+    age:28,
+    emial:&apos;helloworld@qq.com&apos;
+});
+TestEntity.save(function(err,doc){
+    if(err){
+           console.log(&quot;error :&quot; + err);
+    } else {
+        console.log(doc);
+    }
+});
+</code></pre><h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><p>通过entity、model来完成数据库的增删查改。 </p>
+<p>mongoose链接</p>
+<pre><code>var mongoose = require(&apos;mongoose&apos;);
+var db       = mongoose.createConnection(&apos;mongodb://127.0.0.1:27017/test&apos;); 
+</code></pre><p>Schema 结构</p>
+<pre><code>var mongooseSchema = new mongoose.Schema({
+    username : {type : String, default : &apos;匿名用户&apos;},
+    title    : {type : String},
+    content  : {type : String},
+    time     : {type : Date, default: Date.now},
+       age      : {type : Number}
+});
+
+// 添加 mongoose 实例方法
+mongooseSchema.methods.findbyusername =         function(username, callback) {
+    return this.model(&apos;mongoose&apos;).find({
+        username: username
+    }, callback);
+}
+// 添加 mongoose 静态方法，静态方法在Model层就能使用
+mongooseSchema.statics.findbytitle = function(title,     callback) {
+    return this.model(&apos;mongoose&apos;).find({
+        title:title
+    }, callback);
+}
+</code></pre><p>相当于Schemal是一个构造函数，在这里可以添加方法findbyuseraname()和findbytitle</p>
+<p>model结构</p>
+<pre><code>var mongooseModel = db.model(&apos;mongoose&apos;, mongooseSchema);
+</code></pre><p>Entity结构</p>
+<pre><code>//增加操作
+var doc = {
+    username : &apos;emtity_demo_username&apos;, 
+    title : &apos;emtity_demo_title&apos;, 
+    content : &apos;emtity_demo_content&apos;
+};
+var mongooseEntity = new mongooseModel(doc);
+mongooseEntity.save(function(error) {
+if(error) {
+    console.log(error);
+} else {
+    console.log(&apos;saved OK!&apos;);
+}
+// 关闭数据库链接
+    db.close();
+});
+</code></pre><p>——</p>
+<pre><code>//查询操作
+var mongooseEntity = new mongooseModel({});
+mongooseEntity.findbyusername(&apos;model_demo_username&apos;,     function(error, result){
+    if(error) {
+        console.log(error);
+       } else {
+        console.log(result);
+    }
+//关闭数据库链接
+    db.close();
+});
+</code></pre><p>基于model的增加、修改与查询</p>
+<pre><code>// 增加记录 基于model操作
+var doc = {
+    username : &apos;model_demo_username&apos;,
+    title : &apos;model_demo_title&apos;, 
+    content : &apos;model_demo_content&apos;
+};
+mongooseModel.create(doc, function(error){
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(&apos;save ok&apos;);
+}
+// 关闭数据库链接
+    db.close();
+});
+</code></pre><p>——</p>
+<pre><code>//修改记录
+//mongooseModel.update(conditions, update, options,     callback);
+var conditions = {
+    username : &apos;model_demo_username&apos;
+};
+var update     = {
+    $set : {
+        age : 27, 
+        title : &apos;model_demo_title_update&apos;,
+    }
+};
+var options = {
+    upsert : true
+};
+mongooseModel.update(conditions, update, options, function(error){
+    if(error) {
+           console.log(error);
+    } else {
+        console.log(&apos;update ok!&apos;);
+    }
+//关闭数据库链接
+    db.close();
+});
+</code></pre><p>__</p>
+<pre><code>// mongoose find
+var criteria = {title : &apos;emtity_demo_title&apos;}; // 查询条件
+var fields   = {title : 1, content : 1, time : 1}; // 待返回的字段
+var options  = {};
+mongooseModel.find(criteria, fields, options,     function(error, result){
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(result);
+    }
+//关闭数据库链接
+    db.close();
+});
+</code></pre><p>__</p>
+<pre><code>// 删除记录
+var conditions = {username: &apos;emtity_demo_username&apos;};
+mongooseModel.remove(conditions, function(error){
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(&apos;delete ok!&apos;);
+    }
+
+//关闭数据库链接
+    db.close();
+});
+</code></pre><p>基于实例方法的查询</p>
+<p>前面说到findbyusername()在schemal层定义，相当于实例化，然后继承findbyusername()方法</p>
+<pre><code>var mongooseEntity = new mongooseModel({});
+mongooseEntity.findbyusername(&apos;model_demo_username&apos;, function(error, result){
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(result);
+    }
+//关闭数据库链接
+db.close();
+});
+</code></pre><p>基于静态方法的查询</p>
+<p>静态方法可以直接在模型层调用</p>
+<pre><code>// 基于静态方法的查询
+mongooseModel.findbytitle(&apos;emtity_demo_title&apos;, function(error, result){
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(result);
+    }
+//关闭数据库链接
+    db.close();
+});
+</code></pre>
+	
+	</div>
+</div>
+
+           
+		
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-11-12 </div>
+			<div class="article-title"><a href="/2016/11/12/Mac上搭建博客/" >Mac上搭建博客</a></div>						
+		</h3>
+	
+
+
+			  <div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="在OS-X上搭建博客"><a href="#在OS-X上搭建博客" class="headerlink" title="在OS X上搭建博客"></a>在OS X上搭建博客</h1><h2 id="利用hexo这款基于Node-js的静态博客框架，在github上搭建自己的个人博客"><a href="#利用hexo这款基于Node-js的静态博客框架，在github上搭建自己的个人博客" class="headerlink" title="利用hexo这款基于Node.js的静态博客框架，在github上搭建自己的个人博客"></a>利用hexo这款基于Node.js的静态博客框架，在github上搭建自己的个人博客</h2><h3>搭建博客首先需要配置环境</h3><br><strong>1    安装Node</strong><br><br>作用：用来生成静态页面的<br>前往<a href="https://nodejs.org/en/" target="_blank" rel="external">node官网</a>选择左侧的下载就好<br><br><strong>2    安装Git</strong><br><br>作用：把本地的hexo内容提交到github上去.<br><br>安装Xcode就自带有Git，我就不多说了。<br><br><strong>3    申请一枚GitHub账号</strong><br><br>作用：是用来做博客的远程创库、域名、服务器之类的，怎么与本地hexo建立连接等下讲。<br><br><h3>下面正式安装Hexo</h3>
+
+
+<blockquote>
+<p>   Node和Git都安装好后,首先创建一个文件夹,下面以blog为例,用户存放hexo的配置文件,然后进入blog里安装Hexo。<strong>(以下命令全都在文件夹目录下)</strong></p>
+</blockquote>
+<p>执行如下命令安装Hexo：</p>
+<p><strong>sudo npm install -g hexo</strong></p>
+<p>然后开始初始化，执行init命令初始化hexo,命令：</p>
+<p><strong>hexo init</strong></p>
+<p>好啦，至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
+<p>生成静态页面</p>
+<p><strong>hexo generate（hexo g也可以）</strong></p>
+<p>本地启动<br>启动本地服务，进行文章预览调试，命令：</p>
+<p><strong>hexo server</strong></p>
+<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>可以在网站上看到生成的Hello World了！<br><img src="http://f.hiphotos.baidu.com/image/pic/item/9c16fdfaaf51f3deb9daf7459deef01f3a2979a2.jpg" alt="alt"></p>
+<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法<br>your_user_name指的是你创建github账号时使用的username，不是github的账号</p>
+<p>建立好库之后打开blog文件夹里的_config.yml文件，翻到最下面，<br>deploy：</p>
+<pre><code>type: git
+
+repo: https://github.com/hexojs/hexo.git
+</code></pre><p>把地址改成下图所示网址就好了<img src="http://a.hiphotos.baidu.com/image/pic/item/9e3df8dcd100baa18d9a099a4e10b912c8fc2e58.jpg"></p>
+<p>然后，执行配置命令：</p>
+<p><strong>hexo deploy</strong></p>
+<p>然后再浏览器中输入<a href="http://username.github.io/" target="_blank" rel="external">http://username.github.io/</a></p>
+<p>就行了。username跟前面的指的是同一个</p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<pre><code>hexo clean
+
+hexo generate
+
+hexo deploy
+</code></pre><p>一些常用命令：</p>
+<pre><code>hexo new&quot;postName&quot; #新建文章
+
+hexo new page&quot;pageName&quot; #新建页面
+
+hexo generate #生成静态页面至public目录
+
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+
+hexo deploy #将.deploy目录部署到GitHub
+
+hexo help # 查看帮助
+
+hexo version #查看Hexo的版本
+</code></pre><h3 id="报错总结"><a href="#报错总结" class="headerlink" title="报错总结"></a>报错总结</h3><p>ERROR Deployer not found: git 或者 ERROR Deployer not found: github</p>
+<p>解决方法： npm install hexo-deployer-git –save</p>
+<p>如发生报错： ERROR Process failed: layout/.DS_Store , 那么进入主题里面layout和_partial目录下，使用删除命令：</p>
+<p>rm-rf.DS_Store</p>
+<p>ERROR Plugin load failed: hexo-server</p>
+<p>原因：</p>
+<p>Besides,utilities are separated into a standalone module.hexo.util is not reachable anymore.</p>
+<p>解决方法，执行命令：</p>
+<p>sudo npm install hexo-server</p>
+<p>执行命令hexo server，提示：Usage: hexo ….</p>
+<p>原因：</p>
+<p>我认为是没有生成本地服务</p>
+<p>解决方法，执行命令：</p>
+<p>npm install hexo-server –save</p>
+<p>提示：hexo-server@0.1.2 node_modules/hexo-server</p>
+<p>….</p>
+<p>表示成功了</p>
+<p>这个时候再执行：</p>
+<p>hexo-server</p>
+<p>得到:</p>
+<p>INFOHexois running at <a href="http://0.0.0.0:4000/.PressCtrl+C" target="_blank" rel="external">http://0.0.0.0:4000/.PressCtrl+C</a> to stop.</p>
+<p>这个时候再点击<a href="http://0.0.0.0:4000，正常情况下应该是最原始的画面，但是我看到的是：" target="_blank" rel="external">http://0.0.0.0:4000，正常情况下应该是最原始的画面，但是我看到的是：</a></p>
+<p>白板和Cannot GET / 几个字</p>
+<p>原因：</p>
+<p>由于2.6以后就更新了，我们需要手动配置些东西，我们需要输入下面三行命令：</p>
+<p>npm install hexo-renderer-ejs –save</p>
+<p>npm install hexo-renderer-stylus –save</p>
+<p>npm install hexo-renderer-marked –save</p>
+<p>这个时候再重新生成静态文件，命令：</p>
+<p>hexo generate（或hexo g）</p>
+<p>启动本地服务器：</p>
+<p>hexo server（或hexo s）</p>
+<p>文／潘柏信（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">原文链接</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
+
+	
+	</div>
+</div>
+
+           
+		
+           
+			  
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2016-11-11 </div>
 			<div class="article-title"><a href="/2016/11/11/php1/" >php1</a></div>						
 		</h3>
@@ -244,8 +779,8 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
-			<div class="date"> 2016-10-15 </div>
-			<div class="article-title"><a href="/2016/10/15/js基础知识点2/" >js基础知识点2</a></div>						
+			<div class="date"> 2016-10-26 </div>
+			<div class="article-title"><a href="/2016/10/26/前端性能优化总结/" >前端性能优化总结</a></div>						
 		</h3>
 	
 
@@ -254,180 +789,72 @@
   <div class="row">
 	
 	
-		<h2 id="JavaScript-函数基础"><a href="#JavaScript-函数基础" class="headerlink" title="JavaScript 函数基础"></a>JavaScript 函数基础</h2><p><img src="../images/6.jpg" alt="6.jpg"></p>
-<h2 id="JavaScript-字符串函数"><a href="#JavaScript-字符串函数" class="headerlink" title="JavaScript 字符串函数"></a>JavaScript 字符串函数</h2><p><img src="../images/7.jpg" alt="7.jpg"></p>
-<h2 id="JavaScript-数组"><a href="#JavaScript-数组" class="headerlink" title="JavaScript 数组"></a>JavaScript 数组</h2><p><img src="../images/8.jpg" alt="8.jpg"></p>
-<h2 id="JavaScript-正则表达式"><a href="#JavaScript-正则表达式" class="headerlink" title="JavaScript 正则表达式"></a>JavaScript 正则表达式</h2><p><img src="../images/9.jpg" alt="9.jpg"></p>
-<h4 id="转载自今日头条"><a href="#转载自今日头条" class="headerlink" title="转载自今日头条"></a>转载自今日头条</h4>
-	
-	</div>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-10-13 </div>
-			<div class="article-title"><a href="/2016/10/13/js基础知识点1/" >js基础知识点1</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="windows对象"><a href="#windows对象" class="headerlink" title="windows对象"></a>windows对象</h2><p><img src="../images/1.jpg" alt="1.jpg"></p>
-<h2 id="JavaScript-DOM基本操作"><a href="#JavaScript-DOM基本操作" class="headerlink" title="JavaScript DOM基本操作"></a>JavaScript DOM基本操作</h2><p><img src="../images/2.jpg" alt="2.jpg"></p>
-<h2 id="JavaScript变量"><a href="#JavaScript变量" class="headerlink" title="JavaScript变量"></a>JavaScript变量</h2><p><img src="../images/3.jpg" alt="3.jpg"></p>
-<h2 id="JavaScript数据类型"><a href="#JavaScript数据类型" class="headerlink" title="JavaScript数据类型"></a>JavaScript数据类型</h2><p><img src="../images/4.jpg" alt="4.jpg"></p>
-<h2 id="JavaScript流程语句"><a href="#JavaScript流程语句" class="headerlink" title="JavaScript流程语句"></a>JavaScript流程语句</h2><p><img src="../images/5.jpg" alt="5.jpg"></p>
-<h4 id="转载自今日头条"><a href="#转载自今日头条" class="headerlink" title="转载自今日头条"></a>转载自今日头条</h4>
-	
-	</div>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-08-22 </div>
-			<div class="article-title"><a href="/2016/08/22/css布局之全屏布局/" >css布局之全屏布局</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="css布局之全屏布局"><a href="#css布局之全屏布局" class="headerlink" title="css布局之全屏布局"></a>css布局之全屏布局</h2><h3 id="例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1-Position-常规方案2-Flex-CSS3-新实现"><a href="#例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1-Position-常规方案2-Flex-CSS3-新实现" class="headerlink" title="例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现"></a>例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现</h3><ul>
-<li><h3 id="Position"><a href="#Position" class="headerlink" title="Position"></a>Position</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">	/*辅助结构用于滚动*/</div><div class="line"></div><div class="line">		&lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">html,body,.parent &#123;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	/*用于隐藏滚动条*/</div><div class="line"></div><div class="line">	overflo: hidden;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.top &#123;</div><div class="line"></div><div class="line">	/*相对于 body 定位*/</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	top: 0;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	height: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	top: 100px;</div><div class="line"></div><div class="line">	bottom: 50px;</div><div class="line"></div><div class="line">	width: 200px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	left: 200px;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	top: 100px;</div><div class="line"></div><div class="line">	bottom: 50px;</div><div class="line"></div><div class="line">	overflow: auto;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right .inner &#123;</div><div class="line"></div><div class="line">	/*此样式为演示所有*/</div><div class="line"></div><div class="line">	min-height: 1000px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.bottom &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line">	</div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	bottom: 0;</div><div class="line"></div><div class="line">	height: 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="此方法不支持-IE6-可以使用下面的方法解决兼容问题。"><a href="#此方法不支持-IE6-可以使用下面的方法解决兼容问题。" class="headerlink" title="此方法不支持 IE6 可以使用下面的方法解决兼容问题。"></a>此方法不支持 IE6 可以使用下面的方法解决兼容问题。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;g-hd&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;g-sd&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;g-mn&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;g-ft&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">html,body &#123;</div><div class="line"></div><div class="line">	width: 100%;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	overflow: hidden;</div><div class="line"></div><div class="line">	margin: 0;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">html &#123;</div><div class="line"></div><div class="line">	height: auto;</div><div class="line"></div><div class="line">	padding: 100px 0 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-hd,.g-sd,.g-mn,.g-ft &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-hd,.g-ft &#123;</div><div class="line"></div><div class="line">	width: 100%;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-sd,.g-mn &#123;</div><div class="line"></div><div class="line">	top: 100px;</div><div class="line"></div><div class="line">	bottom: 50px;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	overflow: auto;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-hd &#123;</div><div class="line"></div><div class="line">	top: 0;</div><div class="line"></div><div class="line">	height: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-sd &#123;</div><div class="line"></div><div class="line">	width: 300px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-mn &#123;</div><div class="line"></div><div class="line">	position: relative;</div><div class="line"></div><div class="line">	left: 300px;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	top: 0;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	margin-left: 300px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-ft &#123;</div><div class="line"></div><div class="line">	bottom: 0;</div><div class="line"></div><div class="line">	height: 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+		<h1 id="前端性能优化总结"><a href="#前端性能优化总结" class="headerlink" title="前端性能优化总结"></a>前端性能优化总结</h1><h3 id="网页内容"><a href="#网页内容" class="headerlink" title="网页内容"></a>网页内容</h3><p>减少http请求次数</p>
+<p>避免页面跳转</p>
+<p>减少DOM元素数量</p>
+<p>避免404</p>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><p>Gzip压缩传输文件</p>
+<p>避免空的图片src</p>
+<h3 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h3><p>减少Cookie大小</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p>将样式表置顶</p>
+<p>避免CSS表达式</p>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><p>将脚本置底</p>
+<p>使用外部Javascirpt和CSS文件</p>
+<p>精简Javascript和CSS</p>
+<p>去除重复脚本</p>
+<p>减少DOM访问</p>
+<h3 id="1、网页内容"><a href="#1、网页内容" class="headerlink" title="1、网页内容"></a>1、网页内容</h3><p><strong><font color="blue">1.1减少http请求的次数</font></strong></p>
+<p>80%的响应时间花在下载网页内容(images, stylesheets, javascripts, scripts, flash等)。减少请求次数是缩短响应时间的关键！可以通过简化页面设计来减少请求次数，但页面内容较多可以采用以下技巧。</p>
+<p>1.合并文件: 现在有很多现成的工具可以帮你将多个脚本文件文件合并成一个文件，将多个样式表文件合并成一个文件，以此来减少文件的下载次数。<br>　<br>2.CSS Sprites(就是雪碧图): 就是把多个图片拼成一副图片，然后通过CSS来控制在什么地方具体显示这整张图片的什么位置。给大家看个熟悉的Sprites实例。</p>
+<p><img src="http://h.hiphotos.baidu.com/image/pic/item/adaf2edda3cc7cd9d2a210f33001213fb80e9108.jpg" alt=""></p>
+<p>3.BASE64编码图标: 通过编码的字符串将图片内嵌到网页文本中。</p>
+<p>例如下面的inline image的显示效果为一个勾选的checkbox。</p>
+<pre><code>.sample-inline-png {    padding-left: 20px;    background: white url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC&apos;) no-repeat scroll left top;}
+</code></pre><p>可以看到其中有很长的一串，那个就是base64编码的图片，网上有在线生成的工具。<a href="http://tool.css-js.com/base64.html" target="_blank" rel="external">图片在线转换base64</a></p>
+<p><strong><font color="blue">1.2减少DOM元素数量</font></strong></p>
+<p>网页中元素过多对网页的加载和脚本的执行都是沉重的负担，500个元素和5000个元素在加载速度上会有很大差别。想知道你的网页中有多少元素，通过在浏览器中的一条简单命令就可以算出，</p>
+<pre><code>document.getElementsByTagName(&apos;*&apos;).length
+</code></pre><p><strong><font color="blue">1.3避免404</font></strong></p>
+<p>404我们都不陌生，代表服务器没有找到资源，我们要特别要注意404的情况不要在我们提供的网页资源上，客户端发送一个请求但是服务器却返回一个无用的结果，时间浪费掉了。更糟糕的是我们网页中需要加载一个外部脚本，结果返回一个404，不仅阻塞了其他脚本下载，下载回来的内容(404)客户端还会将其当成Javascript去解析。</p>
+<h3 id="服务器-1"><a href="#服务器-1" class="headerlink" title="服务器"></a>服务器</h3><p><strong><font color="blue">1.1Gzip压缩传输文件</font></strong></p>
+<p>Gzip通常可以减少70%网页内容的大小，包括脚本、样式表、图片等文件。Gzip比deflate更高效，主流服务器都有相应的压缩支持模块。</p>
+<p><strong><font color="blue">1.2避免空的图片src</font></strong></p>
+<p>空的图片src仍然会使浏览器发送请求到服务器，这样完全是浪费时间，而且浪费服务器的资源。尤其是你的网站每天被很多人访问的时候，这种空请求造成的伤害不容忽略。浏览器如此实现也是根据RFC 3986 – Uniform Resource Identifiers标准，空的src被定义为当前页面。所以注意我们的网页中是否存在这样的代码</p>
+<h3 id="Cookie-1"><a href="#Cookie-1" class="headerlink" title="Cookie"></a>Cookie</h3><p><strong><font color="blue">1.1减少Cookie大小</font></strong></p>
+<p>Cookie被用来做认证或个性化设置，其信息被包含在http报文头中，对于cookie我们要注意以下几点，来提高请求的响应速度，</p>
 <ul>
-<li><h3 id="Flex"><a href="#Flex" class="headerlink" title="Flex"></a>Flex</h3></li>
+<li>去除没有必要的cookie，如果网页不需要cookie就完全禁掉</li>
+<li>将cookie的大小减到最小</li>
+<li>注意cookie设置的domain级别，没有必要情况下不要影响到sub-domain</li>
+<li>设置合适的过期时间，比较长的过期时间可以提高响应速度</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;middle&quot;&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">			&lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style media=&quot;screen&quot;&gt;</div><div class="line"></div><div class="line">html,body,.parent &#123;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	overflow: hidden;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	display: flex;</div><div class="line"></div><div class="line">	flex-direction: column;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.top &#123;</div><div class="line"></div><div class="line">	height: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.bottom &#123;</div><div class="line"></div><div class="line">	height: 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.middle &#123;</div><div class="line"></div><div class="line">	// 居中自适应</div><div class="line"></div><div class="line">	flex: 1;</div><div class="line"></div><div class="line">	display: flex;</div><div class="line"></div><div class="line">	/*flex-direction: row 为默认值*/</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	width: 200px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	flex: 1;</div><div class="line"></div><div class="line">	overflow: auto;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right .inner &#123;</div><div class="line"></div><div class="line">	min-height: 1000px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="Flex-兼容性-CSS3-中的新概念所有-IE9-及其也行版本都不兼容。百分比宽度需求-只需把定宽高（px-为单位的值）的实现改成百分比（-）既可。"><a href="#Flex-兼容性-CSS3-中的新概念所有-IE9-及其也行版本都不兼容。百分比宽度需求-只需把定宽高（px-为单位的值）的实现改成百分比（-）既可。" class="headerlink" title="Flex 兼容性,CSS3 中的新概念所有 IE9 及其也行版本都不兼容。百分比宽度需求,只需把定宽高（px 为单位的值）的实现改成百分比（%）既可。"></a>Flex 兼容性,CSS3 中的新概念所有 IE9 及其也行版本都不兼容。百分比宽度需求,只需把定宽高（px 为单位的值）的实现改成百分比（%）既可。</h4>
-	
-	</div>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-08-14 </div>
-			<div class="article-title"><a href="/2016/08/14/css布局之多列等分布局/" >css布局之多列等分布局</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="css布局之多列等分布局，每一列的宽度和间距均相等，下面为多列等分布局的布局特定。"><a href="#css布局之多列等分布局，每一列的宽度和间距均相等，下面为多列等分布局的布局特定。" class="headerlink" title="css布局之多列等分布局，每一列的宽度和间距均相等，下面为多列等分布局的布局特定。"></a>css布局之多列等分布局，每一列的宽度和间距均相等，下面为多列等分布局的布局特定。</h2><ul>
-<li><h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3></li>
+<h3 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h3><p><strong><font color="blue">1.1将样式表置顶</font></strong></p>
+<p>将样式表(css)放在网页的HEAD中会让网页显得加载速度更快，因为这样做可以使浏览器逐步加载已经下载的网页内容。这对内容比较多的网页尤其重要，用户不用一直等待在一个白屏上，而是可以先看已经下载的内容。</p>
+<p>如果将样式表放在底部，浏览器会拒绝渲染已经下载的网页，因为大多数浏览器在实现时都努力避免重绘，样式表中的内容是绘制网页的关键信息，没有下载下来之前只好对不起观众了</p>
+<p><strong><font color="blue">1.2避免CSS表达式</font></strong></p>
+<p>CSS表达式的问题在于它被重新计算的次数远比我们想象的要多，不仅在网页绘制或大小改变时计算，即使我们滚动屏幕或者移动鼠标的时候也在计算，因此我们还是尽量避免使用它来防止使用不当而造成的性能损耗。如果想达到类似的效果我们可以通过简单的脚本做到。</p>
+<h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><p><strong><font color="blue">1.1将脚本置底</font></strong></p>
+<p>http协议建议浏览器对同一个hostname不要超过两个并行下载连接， 所以当你从多个domain下载图片的时候可以提高并行下载连接数量。但是当脚本在下载的时候，即使是来自不同的hostname浏览器也不会下载其他资源，因为浏览器要在脚本下载之后依次解析和执行。</p>
+<p>因此对于脚本提速，我们可以考虑以下方式，</p>
+<ul>
+<li>把脚本置底，这样可以让网页渲染所需要的内容尽快加载显示给用户。</li>
+<li>现在主流浏览器都支持defer关键字，可以指定脚本在文档加载后执行。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;1&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;2&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;3&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;4&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style media=&quot;screen&quot;&gt;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	margin-left: -20px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.column &#123;</div><div class="line"></div><div class="line">	float: left;</div><div class="line"></div><div class="line">	width: 25%;</div><div class="line"></div><div class="line">	padding-left: 20px;</div><div class="line"></div><div class="line">	box-sizing: border-box;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="此方法可以完美兼容-IE8-以上版本。-NOTE-：此方法结构和样式具有耦合性。"><a href="#此方法可以完美兼容-IE8-以上版本。-NOTE-：此方法结构和样式具有耦合性。" class="headerlink" title="此方法可以完美兼容 IE8 以上版本。 NOTE+：此方法结构和样式具有耦合性。"></a>此方法可以完美兼容 IE8 以上版本。 NOTE+：此方法结构和样式具有耦合性。</h4><ul>
-<li><h3 id="table"><a href="#table" class="headerlink" title="table"></a>table</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&apos;parent-fix&apos;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">			&lt;p&gt;1&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">		 &lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">			&lt;p&gt;2&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">			&lt;p&gt;3&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">			&lt;p&gt;4&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">	 &lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style media=&quot;screen&quot;&gt;</div><div class="line"></div><div class="line">.parent-fix &#123;</div><div class="line"></div><div class="line">	margin-left: -20px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	display: table;</div><div class="line"></div><div class="line">	width: 100%;</div><div class="line"></div><div class="line">	/*可以布局优先，也可以单元格宽度平分在没有设置的情况下*/</div><div class="line"></div><div class="line">	table-layout: fixed;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.column &#123;</div><div class="line"></div><div class="line">	display: table-cell;</div><div class="line"></div><div class="line">	padding-left: 20px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
+<p>HTML5中新加了async关键字，可以让脚本异步执行。</p>
+<p><strong><font color="blue">1.2使用外部Javascirpt和CSS文件</font></strong></p>
+<p>使用外部Javascript和CSS文件可以使这些文件被浏览器缓存，从而在不同的请求内容之间重用。同时将Javascript和CSS从inline变为external也减小了网页内容的大小。使用外部Javascript和CSS文件的决定因素在于这些外部文件的重用率，如果用户在浏览我们的页面时会访问多次相同页面或者可以重用脚本的不同页面，那么外部文件形式可以为你带来很大的好处。但对于用户通常只会访问一次的页面，例如microsoft.com首页，那inline的javascript和css相对来说可以提供更高的效率。</p>
+<p><strong><font color="blue">1.3精简Javascript和CSS</font></strong></p>
+<p>精简就是将Javascript或CSS中的空格和注释全去掉，用来帮助我们做精简的工具很多，主要可以参考如下，</p>
+<p><img src="http://f.hiphotos.baidu.com/image/pic/item/342ac65c10385343c69eae0b9a13b07eca808842.jpg" alt=""><br>　<br><strong><font color="blue">1.4去除重复脚本</font></strong></p>
+<p>重复的脚本不仅浪费浏览器的下载时间，而且浪费解析和执行时间。一般用来避免引入重复脚本的做法是使用统一的脚本管理模块，这样不仅可以避免重复脚本引入，还可以兼顾脚本依赖管理和版本管理。</p>
+<p><strong><font color="blue">1.5减少DOM访问</font></strong></p>
+<p>通过Javascript访问DOM元素没有我们想象中快，元素多的网页尤其慢，对于Javascript对DOM的访问我们要注意</p>
+<ul>
+<li>缓存已经访问过的元素</li>
+<li>Offline更新节点然后再加回DOM Tree</li>
+<li>避免通过Javascript修复layout</li>
 </ul>
-<h4 id="此方法的缺点是多了文本结果。"><a href="#此方法的缺点是多了文本结果。" class="headerlink" title="此方法的缺点是多了文本结果。"></a>此方法的缺点是多了文本结果。</h4><ul>
-<li><h3 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		 &lt;p&gt;1&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;2&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;3&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;column&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;4&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style media=&quot;screen&quot;&gt;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	display: flex;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.column &#123;</div><div class="line"></div><div class="line">	/*等价于 flex: 1 1 0;*/</div><div class="line"></div><div class="line">	flex: 1;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.column+.column &#123;</div><div class="line"></div><div class="line">	margin-left: 20px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="flex-的特性为分配剩余空间。-NOTE-：兼容性有问题。"><a href="#flex-的特性为分配剩余空间。-NOTE-：兼容性有问题。" class="headerlink" title="flex 的特性为分配剩余空间。 NOTE+：兼容性有问题。"></a>flex 的特性为分配剩余空间。 NOTE+：兼容性有问题。</h4><ul>
-<li><h3 id="table-1"><a href="#table-1" class="headerlink" title="table"></a>table</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	display: table;</div><div class="line"></div><div class="line">	width: 100%;</div><div class="line"></div><div class="line">	table-layout: fixed;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	display: table-cell;</div><div class="line"></div><div class="line">	width: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	display: table-cell;</div><div class="line"></div><div class="line">/*宽度为剩余宽度*/</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="table-的特性为每列等宽，每行等高可以用于解决此需求。"><a href="#table-的特性为每列等宽，每行等高可以用于解决此需求。" class="headerlink" title="table 的特性为每列等宽，每行等高可以用于解决此需求。"></a>table 的特性为每列等宽，每行等高可以用于解决此需求。</h4><ul>
-<li><h3 id="flex-1"><a href="#flex-1" class="headerlink" title="flex"></a>flex</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	display: flex;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	width: 100px;</div><div class="line"></div><div class="line">	margin-left: 20px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	flex: 1;</div><div class="line"></div><div class="line">/*等价于*/</div><div class="line"></div><div class="line">/*flex: 1 1 0;*/</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="flex-默认的-align-items-的值为-stretch。"><a href="#flex-默认的-align-items-的值为-stretch。" class="headerlink" title="flex 默认的 align-items 的值为 stretch。"></a>flex 默认的 align-items 的值为 stretch。</h4><ul>
-<li><h3 id="float-1"><a href="#float-1" class="headerlink" title="float"></a>float</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line"></div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line"></div><div class="line"> 	&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	overflow: hidden;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left,</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">  	padding-bottom: 9999px;</div><div class="line"></div><div class="line">  	margin-bottom: -9999px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	float: left;</div><div class="line"></div><div class="line">	width: 100px;</div><div class="line"></div><div class="line">	margin-right: 20px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	overflow: hidden;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="此方法为伪等高（只有背景显示高度相等），左右真实的高度其实不相等-此方法兼容性较好。"><a href="#此方法为伪等高（只有背景显示高度相等），左右真实的高度其实不相等-此方法兼容性较好。" class="headerlink" title="此方法为伪等高（只有背景显示高度相等），左右真实的高度其实不相等,此方法兼容性较好。"></a>此方法为伪等高（只有背景显示高度相等），左右真实的高度其实不相等,此方法兼容性较好。</h4>
-	
-	</div>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-08-04 </div>
-			<div class="article-title"><a href="/2016/08/04/css多列布局/" >css水平与垂直居中和多列布局</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="css布局之水平垂直居中和多列布局"><a href="#css布局之水平垂直居中和多列布局" class="headerlink" title="css布局之水平垂直居中和多列布局"></a>css布局之水平垂直居中和多列布局</h2><ul>
-<li><h2 id="水平垂直居中"><a href="#水平垂直居中" class="headerlink" title="水平垂直居中"></a>水平垂直居中</h2><h3 id="子元素于父元素垂直及水平居中且其（子元素与父元素）高度宽度均可变。"><a href="#子元素于父元素垂直及水平居中且其（子元素与父元素）高度宽度均可变。" class="headerlink" title="子元素于父元素垂直及水平居中且其（子元素与父元素）高度宽度均可变。"></a>子元素于父元素垂直及水平居中且其（子元素与父元素）高度宽度均可变。</h3></li>
-<li><h3 id="inline-block-text-align-table-cell-vertical-align"><a href="#inline-block-text-align-table-cell-vertical-align" class="headerlink" title="inline-block + text-align + table-cell + vertical-align"></a>inline-block + text-align + table-cell + vertical-align</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line">	text-align: center;</div><div class="line">	display: table-cell;</div><div class="line">	vertical-align: middle;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line">	display: inline-block;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="此方法的好处在于兼容性好。"><a href="#此方法的好处在于兼容性好。" class="headerlink" title="此方法的好处在于兼容性好。"></a>此方法的好处在于兼容性好。</h4><ul>
-<li><h3 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line">	position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line">	position: absolute;</div><div class="line">	left: 50%;</div><div class="line">	top: 50%;</div><div class="line">	transform: translate(-50%, -50%);</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于绝对定位脱离文档流，不会对后续元素的布局造成影响，但transform-为-CSS3-属性，有兼容性问题。"><a href="#此方法的好处在于绝对定位脱离文档流，不会对后续元素的布局造成影响，但transform-为-CSS3-属性，有兼容性问题。" class="headerlink" title="此方法的好处在于绝对定位脱离文档流，不会对后续元素的布局造成影响，但transform 为 CSS3 属性，有兼容性问题。"></a>此方法的好处在于绝对定位脱离文档流，不会对后续元素的布局造成影响，但transform 为 CSS3 属性，有兼容性问题。</h4><ul>
-<li><h3 id="flex-justify-content-align-items"><a href="#flex-justify-content-align-items" class="headerlink" title="flex + justify-content + align-items"></a>flex + justify-content + align-items</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line">	display: flex;</div><div class="line">	justify-content: center;</div><div class="line">	align-items: center;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于只需设置父节点属性，无需设置子元素-但存在兼容性问题。"><a href="#此方法的好处在于只需设置父节点属性，无需设置子元素-但存在兼容性问题。" class="headerlink" title="此方法的好处在于只需设置父节点属性，无需设置子元素,但存在兼容性问题。"></a>此方法的好处在于只需设置父节点属性，无需设置子元素,但存在兼容性问题。</h4><h2 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h2><h3 id="多列布局在网页中非常常见（例如两列布局），多列布局可以是两列定宽，一列自适应，-或者多列不定宽一列自适应还有等分布局等。"><a href="#多列布局在网页中非常常见（例如两列布局），多列布局可以是两列定宽，一列自适应，-或者多列不定宽一列自适应还有等分布局等。" class="headerlink" title="多列布局在网页中非常常见（例如两列布局），多列布局可以是两列定宽，一列自适应， 或者多列不定宽一列自适应还有等分布局等。"></a>多列布局在网页中非常常见（例如两列布局），多列布局可以是两列定宽，一列自适应， 或者多列不定宽一列自适应还有等分布局等。</h3><ul>
-<li><h2 id="一列定宽，一列自适应"><a href="#一列定宽，一列自适应" class="headerlink" title="一列定宽，一列自适应"></a>一列定宽，一列自适应</h2></li>
-<li><h3 id="float-margin"><a href="#float-margin" class="headerlink" title="float + margin"></a>float + margin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.left &#123;</div><div class="line">	float: left;</div><div class="line">	width: 100px;</div><div class="line">&#125;</div><div class="line">.right &#123;</div><div class="line">	margin-left: 100px</div><div class="line">	/*间距可再加入 margin-left */</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法IE-6-中会有3像素的-BUG，解决方法可以在-left-加入-margin-left-3px。"><a href="#此方法IE-6-中会有3像素的-BUG，解决方法可以在-left-加入-margin-left-3px。" class="headerlink" title="此方法IE 6 中会有3像素的 BUG，解决方法可以在 .left 加入 margin-left:-3px。"></a>此方法IE 6 中会有3像素的 BUG，解决方法可以在 .left 加入 margin-left:-3px。</h4><ul>
-<li><h3 id="float-margin-fix-改造版"><a href="#float-margin-fix-改造版" class="headerlink" title="float + margin + (fix) 改造版"></a>float + margin + (fix) 改造版</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;right-fix&quot;&gt;</div><div class="line">		&lt;div class=&quot;right&quot;&gt;</div><div class="line">			&lt;p&gt;right&lt;/p&gt;</div><div class="line">			&lt;p&gt;right&lt;/p&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.left &#123;</div><div class="line">	float: left;</div><div class="line">	width: 100px;</div><div class="line">&#125;</div><div class="line">.right-fix &#123;</div><div class="line">	float: right;</div><div class="line">	width: 100%;</div><div class="line">	margin-left: -100px;</div><div class="line">&#125;</div><div class="line">.right &#123;</div><div class="line">	margin-left: 100px</div><div class="line">	/*间距可再加入 margin-left */</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法不会存在-IE-6-中3像素的-BUG，但-left-不可选择，-需要设置-left-position-relative-来提高层级。-此方法可以适用于多版本浏览器（包括-IE6）。缺点是多余的-HTML-文本结构。"><a href="#此方法不会存在-IE-6-中3像素的-BUG，但-left-不可选择，-需要设置-left-position-relative-来提高层级。-此方法可以适用于多版本浏览器（包括-IE6）。缺点是多余的-HTML-文本结构。" class="headerlink" title="此方法不会存在 IE 6 中3像素的 BUG，但 .left 不可选择， 需要设置 .left {position: relative} 来提高层级。 此方法可以适用于多版本浏览器（包括 IE6）。缺点是多余的 HTML 文本结构。"></a>此方法不会存在 IE 6 中3像素的 BUG，但 .left 不可选择， 需要设置 .left {position: relative} 来提高层级。 此方法可以适用于多版本浏览器（包括 IE6）。缺点是多余的 HTML 文本结构。</h4><ul>
-<li><h3 id="float-overflow"><a href="#float-overflow" class="headerlink" title="float + overflow"></a>float + overflow</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.left &#123;</div><div class="line">	float: left;</div><div class="line">	width: 100px;</div><div class="line">&#125;</div><div class="line">.right &#123;</div><div class="line">	overflow: hidden;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法在设置-overflow-hidden-会触发-BFC-模式（Block-Formatting-Context）块级格式化文本。BFC-中的内容与外界的元素是隔离的。优点在于样式简单，但不支持IE6。"><a href="#此方法在设置-overflow-hidden-会触发-BFC-模式（Block-Formatting-Context）块级格式化文本。BFC-中的内容与外界的元素是隔离的。优点在于样式简单，但不支持IE6。" class="headerlink" title="此方法在设置 overflow: hidden 会触发 BFC 模式（Block Formatting Context）块级格式化文本。BFC 中的内容与外界的元素是隔离的。优点在于样式简单，但不支持IE6。"></a>此方法在设置 overflow: hidden 会触发 BFC 模式（Block Formatting Context）块级格式化文本。BFC 中的内容与外界的元素是隔离的。优点在于样式简单，但不支持IE6。</h4><ul>
-<li><h3 id="table"><a href="#table" class="headerlink" title="table"></a>table</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line">	display: table;</div><div class="line">	width: 100%;</div><div class="line">	table-layout: fixed;</div><div class="line">&#125;</div><div class="line">.left &#123;</div><div class="line">	display: table-cell;</div><div class="line">	width: 100px;</div><div class="line">&#125;</div><div class="line">.right &#123;</div><div class="line">	display: table-cell;</div><div class="line">	/*宽度为剩余宽度*/</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="table-的显示特性为每列的单元格宽度合一定等与表格宽度。-table-layout-fixed-可加速渲染，也是设定布局优先。注意：table-cell-中不可以设置-margin-但是可以通过-padding-来设置间距。"><a href="#table-的显示特性为每列的单元格宽度合一定等与表格宽度。-table-layout-fixed-可加速渲染，也是设定布局优先。注意：table-cell-中不可以设置-margin-但是可以通过-padding-来设置间距。" class="headerlink" title="table 的显示特性为每列的单元格宽度合一定等与表格宽度。 table-layout: fixed; 可加速渲染，也是设定布局优先。注意：table-cell 中不可以设置 margin 但是可以通过 padding 来设置间距。"></a>table 的显示特性为每列的单元格宽度合一定等与表格宽度。 table-layout: fixed; 可加速渲染，也是设定布局优先。注意：table-cell 中不可以设置 margin 但是可以通过 padding 来设置间距。</h4><ul>
-<li><h3 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line">	display: flex;</div><div class="line">&#125;</div><div class="line">.left &#123;</div><div class="line">	width: 100px;</div><div class="line">	margin-left: 20px;</div><div class="line">&#125;</div><div class="line">.right &#123;</div><div class="line">	flex: 1;</div><div class="line">	/*等价于*/</div><div class="line">	/*flex: 1 1 0;*/</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="flex-item-默认为内容宽度。在低版本浏览器兼容问题，存在性能问题，只适合小范围布局。"><a href="#flex-item-默认为内容宽度。在低版本浏览器兼容问题，存在性能问题，只适合小范围布局。" class="headerlink" title="flex-item 默认为内容宽度。在低版本浏览器兼容问题，存在性能问题，只适合小范围布局。"></a>flex-item 默认为内容宽度。在低版本浏览器兼容问题，存在性能问题，只适合小范围布局。</h4><ul>
-<li><h2 id="两列定宽，一列自适应"><a href="#两列定宽，一列自适应" class="headerlink" title="两列定宽，一列自适应"></a>两列定宽，一列自适应</h2></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">	&lt;div class=&quot;left&quot;&gt;</div><div class="line">		&lt;p&gt;left&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;center&quot;&gt;</div><div class="line">		&lt;p&gt;center&lt;p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">		&lt;p&gt;right&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.left, .center &#123;</div><div class="line">	float: left;</div><div class="line">	width: 100px;</div><div class="line">	margin-right: 20px;</div><div class="line">&#125;</div><div class="line">.right &#123;</div><div class="line">	overflow: hidden;</div><div class="line">	/*等价于*/</div><div class="line">	/*flex: 1 1 0;*/</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="多列定宽的实现可以更具单列定宽的例子进行修改与实现。"><a href="#多列定宽的实现可以更具单列定宽的例子进行修改与实现。" class="headerlink" title="多列定宽的实现可以更具单列定宽的例子进行修改与实现。"></a>多列定宽的实现可以更具单列定宽的例子进行修改与实现。</h4><ul>
-<li><h2 id="一列不定宽加一列自适应"><a href="#一列不定宽加一列自适应" class="headerlink" title="一列不定宽加一列自适应"></a>一列不定宽加一列自适应</h2></li>
-</ul>
-<h3 id="不定宽的宽度为内容决定，下面为可以实现此-效果的方法："><a href="#不定宽的宽度为内容决定，下面为可以实现此-效果的方法：" class="headerlink" title="不定宽的宽度为内容决定，下面为可以实现此  效果的方法："></a>不定宽的宽度为内容决定，下面为可以实现此  效果的方法：</h3><h4 id="float-overflow，此方法在-IE6-中有兼容性问题"><a href="#float-overflow，此方法在-IE6-中有兼容性问题" class="headerlink" title="float + overflow，此方法在 IE6 中有兼容性问题"></a>float + overflow，此方法在 IE6 中有兼容性问题</h4><h4 id="table，此方法在-IE6-中有兼容性问题"><a href="#table，此方法在-IE6-中有兼容性问题" class="headerlink" title="table，此方法在 IE6 中有兼容性问题"></a>table，此方法在 IE6 中有兼容性问题</h4><h4 id="flex，此方法在-IE9及其以下版本中有兼容性问题"><a href="#flex，此方法在-IE9及其以下版本中有兼容性问题" class="headerlink" title="flex，此方法在 IE9及其以下版本中有兼容性问题"></a>flex，此方法在 IE9及其以下版本中有兼容性问题</h4><ul>
-<li><h2 id="多列不定宽加一列自适应"><a href="#多列不定宽加一列自适应" class="headerlink" title="多列不定宽加一列自适应"></a>多列不定宽加一列自适应</h2><h3 id="其解决方案同一列不定宽加一列自适应相仿。"><a href="#其解决方案同一列不定宽加一列自适应相仿。" class="headerlink" title="其解决方案同一列不定宽加一列自适应相仿。"></a>其解决方案同一列不定宽加一列自适应相仿。</h3></li>
-</ul>
+<p>还有再补</p>
 
 	
 	</div>
@@ -440,8 +867,8 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
-			<div class="date"> 2016-07-28 </div>
-			<div class="article-title"><a href="/2016/07/28/css布局之垂直居中/" >css布局</a></div>						
+			<div class="date"> 2016-10-16 </div>
+			<div class="article-title"><a href="/2016/10/16/rem/" >rem</a></div>						
 		</h3>
 	
 
@@ -450,19 +877,109 @@
   <div class="row">
 	
 	
-		<h2 id="css布局之垂直居中"><a href="#css布局之垂直居中" class="headerlink" title="css布局之垂直居中"></a>css布局之垂直居中</h2><h3 id="子元素于父元素垂直居中且其（子元素与父元素）宽度均可变"><a href="#子元素于父元素垂直居中且其（子元素与父元素）宽度均可变" class="headerlink" title="子元素于父元素垂直居中且其（子元素与父元素）宽度均可变"></a>子元素于父元素垂直居中且其（子元素与父元素）宽度均可变</h3><ul>
-<li><h3 id="table-cell-vertical-align"><a href="#table-cell-vertical-align" class="headerlink" title="table-cell + vertical-align"></a>table-cell + vertical-align</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> display: table-cell;</div><div class="line"> vertical-align: middle;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于兼容性好（支持-IE8，以下版本需要调整页面结构至-table）。"><a href="#此方法的好处在于兼容性好（支持-IE8，以下版本需要调整页面结构至-table）。" class="headerlink" title="此方法的好处在于兼容性好（支持 IE8，以下版本需要调整页面结构至 table）。"></a>此方法的好处在于兼容性好（支持 IE8，以下版本需要调整页面结构至 table）。</h4><ul>
-<li><h3 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line"> position: absolute;</div><div class="line"> top: 50%;</div><div class="line"> transform: translateY(-50%);</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。"><a href="#此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。" class="headerlink" title="此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。"></a>此方法的好处在于绝对定位元素脱离文档流，不会对后续元素的布局造成影响。但如果绝对定位元素是唯一的元素则父元素也会失去高度，但transform为CSS3属性，存在兼容性问题。</h4><ul>
-<li><h3 id="flex-align-items"><a href="#flex-align-items" class="headerlink" title="flex + align-items"></a>flex + align-items</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> display: flex;</div><div class="line"> align-items: center;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="此方法的好处在于只需设置父节点属性，无需设置子元素-但存在兼容性问题。"><a href="#此方法的好处在于只需设置父节点属性，无需设置子元素-但存在兼容性问题。" class="headerlink" title="此方法的好处在于只需设置父节点属性，无需设置子元素,但存在兼容性问题。"></a>此方法的好处在于只需设置父节点属性，无需设置子元素,但存在兼容性问题。</h4>
+		<h1 id="移动端页面使用rem来做适配"><a href="#移动端页面使用rem来做适配" class="headerlink" title="移动端页面使用rem来做适配"></a>移动端页面使用rem来做适配</h1><p><strong>rem</strong>是指相对于根元素(即html元素)的字体大小的单位。与em不同的是它不会继承父元素的em大小。</p>
+<p>假设根元素的字体大小事10px,则5rem=5*10px,</p>
+<p>这样做是因为以往我们用viewport来获取屏幕的宽度，然后选我们需要兼容设备的最小宽度（一般是320px）。根据这最小宽度来做页面。单位使用px和百分比。在<font color="red">宽度不同的设备上</font>，页面的字体大小，内容尺寸都是一样的，不同的是，大屏的内容间的空隙比小屏的大。所以这样做的缺点就是，页面在某些尺寸的设备上显示的效果不好。</p>
+<p>如果用rem来页面，我们会根据不同的设备宽度在根元素上设置不同的字体大小。宽度越宽，字体越大。然后对原本使用px的地方使用rem来替换。这样，字体大小，内容尺寸，对随着屏幕宽度的变大而变大。在大多数的屏幕上看起来视觉效果是一样的。</p>
+<h3 id="具体做法"><a href="#具体做法" class="headerlink" title="具体做法"></a>具体做法</h3><p>上面说过rem是通过根元素进行适配的，网页中的根元素指的是html我们通过设置html的字体大小就可以控制rem的大小。举个例子：</p>
+<pre><code>html{
+    font-size:20px;
+}
+.btn {
+width: 6rem;
+height: 3rem;
+line-height: 3rem;
+font-size: 1.2rem;
+display: inline-block;
+background: #06c;
+color: #fff;
+border-radius: .5rem;
+text-decoration: none;
+text-align: center; 
+}
+</code></pre><p>Demo 上面代码结果按钮大小如下图：</p>
+<p><img src="http://a.hiphotos.baidu.com/image/pic/item/9358d109b3de9c82318972a76581800a19d8432e.jpg" alt=""></p>
+<p>我把html设置成10px是为了方便我们计算，为什么6rem等于60px。如果这个时候我们的.btn的样式不变，我们再改变html的font-size的值，看看按钮发生上面变化:</p>
+<pre><code>html{
+    font-size:40px;
+}        
+</code></pre><p>Demo<br>按钮大小结果如下:</p>
+<p><img src="http://g.hiphotos.baidu.com/image/pic/item/faf2b2119313b07e54f8da2005d7912397dd8c55.jpg" alt=""></p>
+<p>上面的width，height变成了上面结果的两倍，我们只改变了html的font-size，但.btn样式的width,height的rem设置的属性不变的情况下就改变了按钮在web中的大小。</p>
+<p>其实从上面两个案例中我们就可以计算出1px多少rem:</p>
+<p>第一个例子：</p>
+<p>120px = 6rem * 20px(根元素设置大值)</p>
+<p>第二个例子：</p>
+<p>240px = 6rem * 40px(根元素设置大值)</p>
+<p>推算出：</p>
+<p>10px = 1rem 在根元素（font-size = 10px的时候）；</p>
+<p>20px = 1rem 在根元素（font-size = 20px的时候）；</p>
+<p>40px = 1rem 在根元素（font-size = 40px的时候）；</p>
+<p><img src="http://h.hiphotos.baidu.com/image/pic/item/d009b3de9c82d1581393ac99890a19d8bc3e4281.jpg" alt=""></p>
+<p>在上面两个例子中我们发现第一个案例按钮是等比例放大到第二个按钮，html font-size的改变就会导致按钮的大小发生改变，我们并不需要改变先前给按钮设置的宽度和高度，其实这就是我们最想看到的，为什么这么说？接下来我们再来看一个例子：</p>
+<p>Demo</p>
+<p>由上面两个的demo中我们知道改变html的font-size可以等比改变所有用了rem单位的元素，所以大家可以通过chrome浏览器的调试工具去切换第三个的demo在不同设备下的展示效果，或者通过缩放浏览器的宽度来查看效果，我们可以看到不管在任何分辨率下，页面的排版都是按照等比例进行切换，并且布局没有乱。我只是通过一段js根据浏览器当前的分辨率改变font-size的值，就简单的实现了上面的效果，页面的所有元素都不需要进行任何改变。</p>
+<p>到这里肯定有很多人会问我是怎么计算出不同分辨率下font-size的值？</p>
+<p>首先假设我上面的页面设计稿给我时候是按照640的标准尺寸给我的前提下，（当然这个尺寸肯定不一定是640，可以是320，或者480，又或是375）来看一组表格。</p>
+<p>上面的表格蓝色一列是Demo3中页面的尺寸，页面是以640的宽度去切的，怎么计算不同宽度下font-site的值，大家看表格上面的数值变化应该能明白。举个例子：384/640 = 0.6，384是640的0.6倍，所以384页面宽度下的font-size也等于它的0.6倍，这时384的font-size就等于12px。在不同设备的宽度计算方式以此类推。</p>
+<p>Demo3中我是通过JS去动态计算根元素的font-size，这样的好处是所有设备分辨率都能兼容适配，淘宝首页目前就是用的JS计算。</p>
+<p><strong>JS计算</strong><br>记得把下面这段代码抄到自己的js文件中，来做适配；</p>
+<pre><code>(function (doc, win) {
+    /*初始化 默认宽度、字体、最小最大比例*/
+    var init_w = 640,
+    init_fs = 10,
+    max_scale = 1,
+    min_scale = 0.5;
+    var docEl = doc.documentElement,
+    resizeEvt = &apos;orientationchange&apos; in window ?&apos;orientationchange&apos; : &apos;resize&apos;,
+    recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        var percentage = clientWidth / init_w;
+        percentage = percentage &gt; max_scale?max_scale:     percentage &lt;min_scale?min_scale: percentage ;
+
+        docEl.style.fontSize = init_fs * percentage + &apos;px&apos;;
+    };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+                                                    doc.addEventListener(&apos;DOMContentLoaded&apos;,recalc,false);
+})
+(document, window);
+</code></pre><p>但其实不用JS我们也可以做适配，一般我们在做web app都会先统计自己网站有哪些主流的屏幕设备，然后去针对那些设备去做media query设置也可以实现适配，例如下面这样：</p>
+<pre><code>html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+       html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }    
+}
+</code></pre><p>上面的做的设置当然是不能所有设备全适配，但是用JS是可以实现全适配。具体用哪个就要根据自己的实际工作场景去定了。</p>
+<p>下面推荐两个国内用了rem技术的移动站，大家可以上去参考看看他们的做法，手机淘宝目前只有首页用了rem，淘宝native app的首页是内嵌的web app首页。</p>
+<p><a href="m.taobao.com">淘宝首页</a></p>
+<p><a href="m.dx.com">D X</a></p>
+<p>感谢你的阅读，本文由 腾讯ISUX 版权所有，转载时请注明出处，违者必究，谢谢你的合作。</p>
+
 	
 	</div>
 </div>
@@ -527,6 +1044,10 @@
       </li>
     
       <li>
+        <a href="/2016/11/28/markdown语法总结/" ><i class="fa fa-file-o"></i>markdown语法总结</a>
+      </li>
+    
+      <li>
         <a href="/2016/11/24/php3/" ><i class="fa fa-file-o"></i>php3</a>
       </li>
     
@@ -535,11 +1056,7 @@
       </li>
     
       <li>
-        <a href="/2016/11/11/php1/" ><i class="fa fa-file-o"></i>php1</a>
-      </li>
-    
-      <li>
-        <a href="/2016/10/15/js基础知识点2/" ><i class="fa fa-file-o"></i>js基础知识点2</a>
+        <a href="/2016/11/17/浏览器兼容问题/" ><i class="fa fa-file-o"></i>浏览器兼容问题</a>
       </li>
     
   </ul>

@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Mac上搭建博客 | hello</title>
+  <meta name="author" content="xoappp">
+  
+  <meta name="description" content="在OS X上搭建博客利用hexo这款基于Node.js的静态博客框架，在github上搭建自己的个人博客搭建博客首先需要配置环境1    安装Node作用：用来生成静态页面的前往node官网选择左侧的下载就好2    安装Git作用：把本地的hexo内容提交到github上去.安装Xcode就自带有">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Mac上搭建博客"/>
+  <meta property="og:site_name" content="hello"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">hello</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> Mac上搭建博客</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="在OS-X上搭建博客"><a href="#在OS-X上搭建博客" class="headerlink" title="在OS X上搭建博客"></a>在OS X上搭建博客</h1><h2 id="利用hexo这款基于Node-js的静态博客框架，在github上搭建自己的个人博客"><a href="#利用hexo这款基于Node-js的静态博客框架，在github上搭建自己的个人博客" class="headerlink" title="利用hexo这款基于Node.js的静态博客框架，在github上搭建自己的个人博客"></a>利用hexo这款基于Node.js的静态博客框架，在github上搭建自己的个人博客</h2><h3>搭建博客首先需要配置环境</h3><br><strong>1    安装Node</strong><br><br>作用：用来生成静态页面的<br>前往<a href="https://nodejs.org/en/" target="_blank" rel="external">node官网</a>选择左侧的下载就好<br><br><strong>2    安装Git</strong><br><br>作用：把本地的hexo内容提交到github上去.<br><br>安装Xcode就自带有Git，我就不多说了。<br><br><strong>3    申请一枚GitHub账号</strong><br><br>作用：是用来做博客的远程创库、域名、服务器之类的，怎么与本地hexo建立连接等下讲。<br><br><h3>下面正式安装Hexo</h3>
+
+
+<blockquote>
+<p>   Node和Git都安装好后,首先创建一个文件夹,下面以blog为例,用户存放hexo的配置文件,然后进入blog里安装Hexo。<strong>(以下命令全都在文件夹目录下)</strong></p>
+</blockquote>
+<p>执行如下命令安装Hexo：</p>
+<p><strong>sudo npm install -g hexo</strong></p>
+<p>然后开始初始化，执行init命令初始化hexo,命令：</p>
+<p><strong>hexo init</strong></p>
+<p>好啦，至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
+<p>生成静态页面</p>
+<p><strong>hexo generate（hexo g也可以）</strong></p>
+<p>本地启动<br>启动本地服务，进行文章预览调试，命令：</p>
+<p><strong>hexo server</strong></p>
+<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>可以在网站上看到生成的Hello World了！<br><img src="http://f.hiphotos.baidu.com/image/pic/item/9c16fdfaaf51f3deb9daf7459deef01f3a2979a2.jpg" alt="alt"></p>
+<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法<br>your_user_name指的是你创建github账号时使用的username，不是github的账号</p>
+<p>建立好库之后打开blog文件夹里的_config.yml文件，翻到最下面，<br>deploy：</p>
+<pre><code>type: git
+
+repo: https://github.com/hexojs/hexo.git
+</code></pre><p>把地址改成下图所示网址就好了<img src="http://a.hiphotos.baidu.com/image/pic/item/9e3df8dcd100baa18d9a099a4e10b912c8fc2e58.jpg"></p>
+<p>然后，执行配置命令：</p>
+<p><strong>hexo deploy</strong></p>
+<p>然后再浏览器中输入<a href="http://username.github.io/" target="_blank" rel="external">http://username.github.io/</a></p>
+<p>就行了。username跟前面的指的是同一个</p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<pre><code>hexo clean
+
+hexo generate
+
+hexo deploy
+</code></pre><p>一些常用命令：</p>
+<pre><code>hexo new&quot;postName&quot; #新建文章
+
+hexo new page&quot;pageName&quot; #新建页面
+
+hexo generate #生成静态页面至public目录
+
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+
+hexo deploy #将.deploy目录部署到GitHub
+
+hexo help # 查看帮助
+
+hexo version #查看Hexo的版本
+</code></pre><h3 id="报错总结"><a href="#报错总结" class="headerlink" title="报错总结"></a>报错总结</h3><p>ERROR Deployer not found: git 或者 ERROR Deployer not found: github</p>
+<p>解决方法： npm install hexo-deployer-git –save</p>
+<p>如发生报错： ERROR Process failed: layout/.DS_Store , 那么进入主题里面layout和_partial目录下，使用删除命令：</p>
+<p>rm-rf.DS_Store</p>
+<p>ERROR Plugin load failed: hexo-server</p>
+<p>原因：</p>
+<p>Besides,utilities are separated into a standalone module.hexo.util is not reachable anymore.</p>
+<p>解决方法，执行命令：</p>
+<p>sudo npm install hexo-server</p>
+<p>执行命令hexo server，提示：Usage: hexo ….</p>
+<p>原因：</p>
+<p>我认为是没有生成本地服务</p>
+<p>解决方法，执行命令：</p>
+<p>npm install hexo-server –save</p>
+<p>提示：hexo-server@0.1.2 node_modules/hexo-server</p>
+<p>….</p>
+<p>表示成功了</p>
+<p>这个时候再执行：</p>
+<p>hexo-server</p>
+<p>得到:</p>
+<p>INFOHexois running at <a href="http://0.0.0.0:4000/.PressCtrl+C" target="_blank" rel="external">http://0.0.0.0:4000/.PressCtrl+C</a> to stop.</p>
+<p>这个时候再点击<a href="http://0.0.0.0:4000，正常情况下应该是最原始的画面，但是我看到的是：" target="_blank" rel="external">http://0.0.0.0:4000，正常情况下应该是最原始的画面，但是我看到的是：</a></p>
+<p>白板和Cannot GET / 几个字</p>
+<p>原因：</p>
+<p>由于2.6以后就更新了，我们需要手动配置些东西，我们需要输入下面三行命令：</p>
+<p>npm install hexo-renderer-ejs –save</p>
+<p>npm install hexo-renderer-stylus –save</p>
+<p>npm install hexo-renderer-marked –save</p>
+<p>这个时候再重新生成静态文件，命令：</p>
+<p>hexo generate（或hexo g）</p>
+<p>启动本地服务器：</p>
+<p>hexo server（或hexo s）</p>
+<p>文／潘柏信（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">原文链接</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/11/14/mongodb/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/11/11/php1/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-11-12 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 xoappp
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>
